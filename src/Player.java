@@ -1,5 +1,9 @@
 
 import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+
+import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class Player {
 
@@ -152,7 +156,6 @@ public class Player {
                         }
                     }
                 }
-//TODO: Fix checkFourOfAKind's remove method, as it currently does not work correctly
                 checkFourOfAKind(guess);
             }
             //add a card to opponent's hand if their hand is empty
@@ -163,9 +166,55 @@ public class Player {
 
         //if the computer is guessing
         if (getType().equals("computer")) {
-            //ask user if they have cards with value guess
-            //if user inputs yes, check their hand anyways
-            //if user inputs no, do nothing.
+            boolean goodInput = false;
+            char input_haveCard = 'c';
+            while (!goodInput) {
+                Scanner reader = new Scanner(System.in);
+                System.out.println("Do you have any "+guess+"s?");
+                System.out.println("y - yes");
+                System.out.println("n - no");
+                input_haveCard = reader.next().charAt(0);
+
+                //check if input has correct domain
+                if (input_haveCard == 'y' || input_haveCard == 'n') {
+                    goodInput = true;
+                }
+            }
+
+            if(input_haveCard == 'n'){
+
+                drawCard(deck);
+
+            }else if(input_haveCard == 'y'){
+
+                boolean playerReallyHasCard = false;
+
+                for (int i = 0; i < opponent.getHand().size(); i++) {
+                    //find all cards in opponent's hand that match the player's
+                    if (opponent.getHand().get(i).getValue().equals(guess)) {
+                        // add card to player's hand and remove card from opponent's hand
+                        addToHand(opponent.getHand().get(i));
+                        toRemove.add(opponent.getHand().get(i));
+                        playerReallyHasCard = true;
+                    }
+                }
+                for (int i = 0; i < opponent.getHand().size(); i++) {
+                    for (int j = 0; j < toRemove.size(); j++) {
+                        if (opponent.getHand().get(i).getValue().equals(toRemove.get(j).getValue())) {
+                            opponent.removeFromHand(i);
+                        }
+                    }
+                }
+                checkFourOfAKind(guess);
+
+                if(!playerReallyHasCard){
+                    System.out.println("ok then, where is it?");
+                    System.out.println("LIAR!\n");
+                    drawCard(deck);
+                }
+
+            }
+
         }
     }
 }
