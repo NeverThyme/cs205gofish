@@ -1,13 +1,11 @@
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String args[]) {
 
         //create deck
-        ArrayList<Card> deck = new ArrayList<Card>();
+        ArrayList<Card> deck = new ArrayList<>();
         for (int i = 2; i < 15; i++) {
             String cardValue = Integer.toString(i);
             Card heart = new Card(cardValue, '♡');
@@ -40,54 +38,61 @@ public class Main {
 
             //ask user to quite or guess
             boolean goodInput = false;
-            char input_Quit = 'c';
+            //initializing to 'c', as compiler doesn't like initializing to ''
+            char inputQuit = 'c';
             while (!goodInput) {
                 Scanner reader = new Scanner(System.in);
                 System.out.println("Please choose:");
                 System.out.println("q to quit");
                 System.out.println("g to guess");
-                input_Quit = reader.next().charAt(0);
-                if (input_Quit == 'q' || input_Quit == 'g') {
+                inputQuit = reader.next().charAt(0);
+                if (inputQuit == 'q' || inputQuit == 'g') {
                     goodInput = true;
                 }
             }
 
             //quit the game if the user typed 'q'
-            if (input_Quit == 'q') {
-                game = false;
+            if (inputQuit == 'q') {
                 break;
             }
 
             //allow user to input a guess if they choose guess
             goodInput = false;
-            String input_Guess = "";
+            String inputGuess = "";
             while (!goodInput) {
                 Scanner reader = new Scanner(System.in);
-                System.out.println("What is your guess?");
-                System.out.println("enter a value 1-14 or:");
-                System.out.println("j for jack");
-                System.out.println("q for queen");
-                System.out.println("k for king");
-                System.out.println("a for ace");
-                input_Guess = reader.next().substring(0, 1);
+                System.out.println("What is your guess?\n");
+                System.out.println("Enter a value 1-14 or:");
+                System.out.println("j for Jack");
+                System.out.println("q for Queen");
+                System.out.println("k for King");
+                System.out.println("a for Ace");
+                inputGuess = reader.next().substring(0, 1);
                 //convert guess to number form
-                if (input_Guess.toLowerCase().equals("j")) {
-                    input_Guess = "11";
-                } else if (input_Guess.toLowerCase().equals("q")) {
-                    input_Guess = "12";
-                } else if (input_Guess.toLowerCase().equals("k")) {
-                    input_Guess = "13";
-                } else if (input_Guess.toLowerCase().equals("a")) {
-                    input_Guess = "14";
+                switch (inputGuess.toLowerCase()) {
+                    case "j":
+                        inputGuess = "11";
+                        break;
+                    case "q":
+                        inputGuess = "12";
+                        break;
+                    case "k":
+                        inputGuess = "13";
+                        break;
+                    case "a":
+                        inputGuess = "14";
+                        break;
+                    default:
+                        break;
                 }
 
                 //check if input has correct domain
-                if (isInteger(input_Guess) && Integer.parseInt(input_Guess) > 0 && Integer.parseInt(input_Guess) < 15) {
+                if (isInteger(inputGuess) && Integer.parseInt(inputGuess) > 0 && Integer.parseInt(inputGuess) < 15) {
                     goodInput = true;
                 }
             }
             //player guess
-            user.guess(computer, input_Guess, deck);
+            user.guess(computer, inputGuess, deck);
 
             //we should make computer guess random
             computer.guess(user, "1", deck);
