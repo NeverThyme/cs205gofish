@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -31,6 +32,22 @@ public class Main {
 
         //start the game
         boolean game = true;
+
+        boolean goodInputD = false;
+        String inputDif = "0";
+        int difficutly = 0;
+        while (!goodInputD) {
+            Scanner reader = new Scanner(System.in);
+            System.out.println("Difficulty (0-100): ");
+            inputDif = reader.next();
+            if (isInteger(inputDif)) {
+                difficutly = Integer.parseInt(inputDif);
+                if(difficutly >= 0 && difficutly <= 100){
+                    goodInputD = true;
+                }
+            }
+        }
+
 
         while (game) {
             //show user their hand
@@ -93,12 +110,12 @@ public class Main {
                 }
             }
             //player guess
-            user.guess(computer, inputGuess, deck);
+            user.guess(computer, inputGuess, deck, difficutly);
 
             //we should make computer guess random
             Random rand = new Random();
-            int compGuess = rand.nextInt(computer.getHand().size() + 1);
-            computer.guess(user, computer.getHand().get(compGuess).getValue(), deck);
+            int compGuess = rand.nextInt(computer.getHand().size());
+            computer.guess(user, computer.getHand().get(compGuess).getValue(), deck,difficutly);
 
             //maybe we should make player.guess return a string of information to use for the I/O?
             //so it would look like String turnData1 = user.guess(computer,input_Guess,deck);
@@ -109,7 +126,7 @@ public class Main {
             //                      "Round 7: user-hand: A A 3 J  computer-hand: 7 A 2 Q K 6  user guess: A  user-hand-after-guess: A A A 3 J ..........."
             //end game when user hand is empty
             //note that part of the computer.guess() could take a card from the player, but the player will also draw a new card in the same method
-            if (user.getHand().size() <= 0) {
+            if (user.getHand().size() <= 0 && deck.isEmpty()) {
                 if (user.getFourOfAKindSets().size() == computer.getFourOfAKindSets().size()) {
                     System.out.println("Tie Game! Everyone loses!");
                 } else if (user.getFourOfAKindSets().size() >= computer.getFourOfAKindSets().size()) {
@@ -117,10 +134,11 @@ public class Main {
                 } else {
                     System.out.println("Computer wins! Try harder next time!");
                 }
-                System.out.println("Your sets:");
+                System.out.print("Your sets:");
                 user.printSets(user.getFourOfAKindSets());
-                System.out.println("Computer's sets:");
+                System.out.print("\nComputer's sets:");
                 computer.printSets(computer.getFourOfAKindSets());
+
                 game = false;
                 //display winner and print out each player's 4OfAKind arrays
             }

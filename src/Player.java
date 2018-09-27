@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Player {
@@ -151,7 +152,7 @@ public class Player {
         }
     }
 
-    public void guess(Player opponent, String guess, ArrayList<Card> deck) { //method should include opponents response to guess
+    public void guess(Player opponent, String guess, ArrayList<Card> deck, int dif) { //method should include opponents response to guess
         ArrayList<Card> toRemove = new ArrayList<>();
 
         if (this == opponent) {
@@ -159,33 +160,41 @@ public class Player {
         } //don't let user guess whats in own hand
         //if the user is guessing
         if (getType().equalsIgnoreCase("user")) {
-            if (opponent.getCards(opponent.getHand(), guess).isEmpty()) {
-                //opponent's hand does not have the card we guessed
-                System.out.println("Go fish!");
+            Random rand = new Random();
+            int randNum = rand.nextInt(100 + 1);
+            if(randNum<dif){
+                System.out.println("Go fish! ;)");
                 drawCard(deck);
-            } else {
-                //opponent's hand does contain the queried card
-                for (int i = 0; i < opponent.getHand().size(); i++) {
-                    //find all cards in opponent's hand that match the player's
-                    if (opponent.getHand().get(i).getValue().equals(guess)) {
-                        // add card to player's hand and remove card from opponent's hand
-                        addToHand(opponent.getHand().get(i));
-                        toRemove.add(opponent.getHand().get(i));
-                    }
-                }
-                for (int i = 0; i < opponent.getHand().size(); i++) {
-                    for (int j = 0; j < toRemove.size(); j++) {
-                        if (opponent.getHand().get(i).getValue().equals(toRemove.get(j).getValue())) {
-                            opponent.removeFromHand(i);
+            }else{
+                if (opponent.getCards(opponent.getHand(), guess).isEmpty()) {
+                    //opponent's hand does not have the card we guessed
+                    System.out.println("Go fish!");
+                    drawCard(deck);
+                } else {
+                    //opponent's hand does contain the queried card
+                    for (int i = 0; i < opponent.getHand().size(); i++) {
+                        //find all cards in opponent's hand that match the player's
+                        if (opponent.getHand().get(i).getValue().equals(guess)) {
+                            // add card to player's hand and remove card from opponent's hand
+                            addToHand(opponent.getHand().get(i));
+                            toRemove.add(opponent.getHand().get(i));
                         }
                     }
+                    for (int i = 0; i < opponent.getHand().size(); i++) {
+                        for (int j = 0; j < toRemove.size(); j++) {
+                            if (opponent.getHand().get(i).getValue().equals(toRemove.get(j).getValue())) {
+                                opponent.removeFromHand(i);
+                            }
+                        }
+                    }
+                    checkFourOfAKind(guess, deck);
                 }
-                checkFourOfAKind(guess, deck);
+                //add a card to opponent's hand if their hand is empty
+                if (opponent.getHand().isEmpty() && !deck.isEmpty()) {
+                    opponent.drawCard(deck);
+                }
             }
-            //add a card to opponent's hand if their hand is empty
-            if (opponent.getHand().isEmpty() && !deck.isEmpty()) {
-                opponent.drawCard(deck);
-            }
+
         }
 
         //if the computer is guessing
@@ -223,6 +232,9 @@ public class Player {
                     for (int j = 0; j < toRemove.size(); j++) {
                         if (opponent.getHand().get(i).getValue().equals(toRemove.get(j).getValue())) {
                             opponent.removeFromHand(i);
+                            if(opponent.getHand().isEmpty()){
+                                opponent.drawCard(deck);
+                            }
                         }
                     }
                 }
