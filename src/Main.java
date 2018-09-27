@@ -33,7 +33,7 @@ public class Main {
 
         while (game) {
             //show user their hand
-            System.out.println("Your Hand:");
+            System.out.print("Your Hand: ");
             user.displayCards(user.getHand());
 
             //ask user to quite or guess
@@ -107,6 +107,17 @@ public class Main {
             //end game when user hand is empty
             //note that part of the computer.guess() could take a card from the player, but the player will also draw a new card in the same method
             if (user.getHand().size() <= 0) {
+                if (user.getFourOfAKindSets().size() == computer.getFourOfAKindSets().size()) {
+                    System.out.println("Tie Game! Everyone loses!");
+                } else if (user.getFourOfAKindSets().size() >= computer.getFourOfAKindSets().size()) {
+                    System.out.println("User wins! Congratulations!");
+                } else {
+                    System.out.println("Computer wins! Try harder next time!");
+                }
+                System.out.println("Your sets:");
+                user.printSets(user.getFourOfAKindSets());
+                System.out.println("Computer's sets:");
+                computer.printSets(computer.getFourOfAKindSets());
                 game = false;
                 //display winner and print out each player's 4OfAKind arrays
             }

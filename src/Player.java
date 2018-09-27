@@ -77,7 +77,7 @@ public class Player {
                 ctr++;
             }
         }
-        if (ctr == 4) {
+        if (ctr >= 4) {
             ArrayList<Card> toRemove = new ArrayList<>();
             for (int i = 0; i < getHand().size(); i++) {
                 if (getHand().get(i).getValue().equals(value)) {
@@ -92,7 +92,13 @@ public class Player {
                 }
             }
             addFourOfAKindSets(value);
+            if (getType().equals("user")) {
+                System.out.println("You got a set of " + value + "s!");
+            }
             if (getHand().isEmpty()) {
+                if (getType().equals("user")) {
+                    System.out.println("Your hand was empty, you drew a card.");
+                }
                 drawCard(deck);
             }
             return true;
@@ -119,9 +125,30 @@ public class Player {
                     System.out.print(card.getValue() + card.getSuit() + " ");
                     break;
             }
-
         }
         System.out.println("");
+    }
+    
+    public static void printSets(ArrayList<String> vals) {
+        for (String v : vals ) {
+            switch (v) {
+                case "11":
+                    System.out.print("J♡ J♢ J♣ J♠");
+                    break;
+                case "12":
+                    System.out.print("Q♡ Q♢ Q♣ Q♠");
+                    break;
+                case "13":
+                    System.out.print("K♡ K♢ K♣ K♠");
+                    break;
+                case "14":
+                    System.out.print("A♡ A♢ A♣ A♠");
+                    break;
+                default:
+                    System.out.print(v + "♡ " + v + "♢ " + v + "♣ " + v + "♠");
+                    break;
+            }
+        }
     }
 
     public void guess(Player opponent, String guess, ArrayList<Card> deck) { //method should include opponents response to guess
@@ -157,7 +184,7 @@ public class Player {
             }
             //add a card to opponent's hand if their hand is empty
             if (opponent.getHand().isEmpty() && !deck.isEmpty()) {
-                opponent.getHand().add(deck.get(0));
+                opponent.drawCard(deck);
             }
         }
 
@@ -167,7 +194,7 @@ public class Player {
             char inputHaveCard = 'c';
             while (!goodInput) {
                 Scanner reader = new Scanner(System.in);
-                System.out.println("Your Hand: ");
+                System.out.print("Your Hand: ");
                 displayCards(opponent.getHand());
                 System.out.println("Do you have any " + guess + "s?");
                 System.out.println("y - yes");
