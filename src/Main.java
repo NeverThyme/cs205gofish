@@ -62,7 +62,7 @@ public class Main {
             while (!goodInput) {
                 Scanner reader = new Scanner(System.in);
                 System.out.println("What is your guess?\n");
-                System.out.println("Enter a value 1-14 or:");
+                System.out.println("Enter a value 2-14 or:");
                 System.out.println("j for Jack");
                 System.out.println("q for Queen");
                 System.out.println("k for King");

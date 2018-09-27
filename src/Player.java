@@ -164,28 +164,25 @@ public class Player {
         //if the computer is guessing
         if (getType().equals("computer")) {
             boolean goodInput = false;
-            char input_haveCard = 'c';
+            char inputHaveCard = 'c';
             while (!goodInput) {
                 Scanner reader = new Scanner(System.in);
-                System.out.println("Do you have any "+guess+"s?");
+                System.out.println("Your Hand: ");
+                displayCards(opponent.getHand());
+                System.out.println("Do you have any " + guess + "s?");
                 System.out.println("y - yes");
                 System.out.println("n - no");
-                input_haveCard = reader.next().charAt(0);
+                inputHaveCard = reader.next().charAt(0);
 
                 //check if input has correct domain
-                if (input_haveCard == 'y' || input_haveCard == 'n') {
+                if (inputHaveCard == 'y' || inputHaveCard == 'n') {
                     goodInput = true;
                 }
             }
-
-            if(input_haveCard == 'n'){
-
+            if (inputHaveCard == 'n') {
                 drawCard(deck);
-
-            }else if(input_haveCard == 'y'){
-
+            } else if (inputHaveCard == 'y') {
                 boolean playerReallyHasCard = false;
-
                 for (int i = 0; i < opponent.getHand().size(); i++) {
                     //find all cards in opponent's hand that match the player's
                     if (opponent.getHand().get(i).getValue().equals(guess)) {
@@ -203,14 +200,12 @@ public class Player {
                     }
                 }
                 checkFourOfAKind(guess, deck);
-                if(!playerReallyHasCard){
+                if (!playerReallyHasCard) {
                     System.out.println("ok then, where is it?");
                     System.out.println("LIAR!\n");
                     drawCard(deck);
                 }
-
             }
-
         }
     }
 }
