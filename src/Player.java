@@ -69,7 +69,7 @@ public class Player {
     }
 
     // check if hand has 4 of a kind
-    public boolean checkFourOfAKind(String value) {
+    public boolean checkFourOfAKind(String value, ArrayList<Card> deck) {
         int ctr = 0;
         for (int i = 0; i < hand.size(); i++) {
             if (hand.get(i).getValue().equals(value)) {
@@ -91,6 +91,9 @@ public class Player {
                 }
             }
             addFourOfAKindSets(value);
+            if (getHand().isEmpty()) {
+                drawCard(deck);
+            }
             return true;
         }
         return false;
@@ -131,10 +134,7 @@ public class Player {
             if (opponent.getCards(opponent.getHand(), guess).isEmpty()) {
                 //opponent's hand does not have the card we guessed
                 System.out.println("Go fish!");
-                if (!deck.isEmpty()) {
-                    addToHand(deck.get(0));
-                    deck.remove(0);
-                }
+                drawCard(deck);
             } else {
                 //opponent's hand does contain the queried card
                 for (int i = 0; i < opponent.getHand().size(); i++) {
@@ -152,8 +152,7 @@ public class Player {
                         }
                     }
                 }
-//TODO: Fix checkFourOfAKind's remove method, as it currently does not work correctly
-                checkFourOfAKind(guess);
+                checkFourOfAKind(guess, deck);
             }
             //add a card to opponent's hand if their hand is empty
             if (opponent.getHand().isEmpty() && !deck.isEmpty()) {
