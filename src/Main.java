@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
     public static void main(String args[]) {
@@ -95,7 +96,9 @@ public class Main {
             user.guess(computer, inputGuess, deck);
 
             //we should make computer guess random
-            computer.guess(user, "1", deck);
+            Random rand = new Random();
+            int compGuess = rand.nextInt(computer.getHand().size() + 1);
+            computer.guess(user, computer.getHand().get(compGuess).getValue(), deck);
 
             //maybe we should make player.guess return a string of information to use for the I/O?
             //so it would look like String turnData1 = user.guess(computer,input_Guess,deck);
