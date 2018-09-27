@@ -31,7 +31,7 @@ public class Player {
 
     public void removeFromHand(int i) {
         if (hand.size() >= i) {
-            System.out.println("Removing " + hand.get(i).getSuit());
+            //System.out.println("Removing " + hand.get(i).getSuit());
             hand.remove(i);
         } else {
             System.out.println("YOU SHOULD NEVER SEE THIS");
@@ -77,9 +77,17 @@ public class Player {
             }
         }
         if (ctr == 4) {
-            for (int i = 0; i < hand.size(); i++) {
-                if (hand.get(i).getValue().equals(value)) {
-                    removeFromHand(i);
+            ArrayList<Card> toRemove = new ArrayList<>();
+            for (int i = 0; i < getHand().size(); i++) {
+                if (getHand().get(i).getValue().equals(value)) {
+                    toRemove.add(getHand().get(i));
+                }
+            }
+            for (int i = 0; i < toRemove.size(); i++) {
+                for (int j = 0; j < getHand().size(); j++) {
+                    if (getHand().get(j).getValue().equals(toRemove.get(i).getValue())) {
+                        removeFromHand(j);
+                    }
                 }
             }
             addFourOfAKindSets(value);
@@ -90,16 +98,22 @@ public class Player {
 
     public static void displayCards(ArrayList<Card> cards) {
         for (Card card : cards) {
-            if (card.getValue().equals("11")) {
-                System.out.print("J" + card.getSuit() + " ");
-            } else if (card.getValue().equals("12")) {
-                System.out.print("Q" + card.getSuit() + " ");
-            } else if (card.getValue().equals("13")) {
-                System.out.print("K" + card.getSuit() + " ");
-            } else if (card.getValue().equals("14")) {
-                System.out.print("A" + card.getSuit() + " ");
-            } else {
-                System.out.print(card.getValue() + card.getSuit() + " ");
+            switch (card.getValue()) {
+                case "11":
+                    System.out.print("J" + card.getSuit() + " ");
+                    break;
+                case "12":
+                    System.out.print("Q" + card.getSuit() + " ");
+                    break;
+                case "13":
+                    System.out.print("K" + card.getSuit() + " ");
+                    break;
+                case "14":
+                    System.out.print("A" + card.getSuit() + " ");
+                    break;
+                default:
+                    System.out.print(card.getValue() + card.getSuit() + " ");
+                    break;
             }
 
         }
@@ -139,7 +153,7 @@ public class Player {
                     }
                 }
 //TODO: Fix checkFourOfAKind's remove method, as it currently does not work correctly
-                //checkFourOfAKind(guess);
+                checkFourOfAKind(guess);
             }
             //add a card to opponent's hand if their hand is empty
             if (opponent.getHand().isEmpty() && !deck.isEmpty()) {
