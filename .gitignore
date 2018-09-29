@@ -1,1 +1,8 @@
+/cs205gofish/
+/nbproject/
+/build/
 .DS_Store
+build.xml
+manifest.mf
+slist.gtolley.c
+test.txt
