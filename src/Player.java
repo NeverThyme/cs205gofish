@@ -53,11 +53,8 @@ public class Player {
             //check for 4OfAKind
             String valueToCheck = deck.get(0).getValue();
             addToHand(deck.get(0));
-            shuffle(deck);
             deck.remove(0);
-
-            shuffle(deck);
-            checkFourOfAKind(valueToCheck,deck);
+            checkFourOfAKind(valueToCheck, deck);
         }
     }
 
@@ -100,7 +97,6 @@ public class Player {
                 System.out.println("You got a set of " + valueToDisplay(value) + "s!");
             }
             if (getHand().isEmpty()) {
-
                 if (getType().equals("user") && !deck.isEmpty()) {
                     System.out.println("Your hand was empty, you drew a card.");
                 }
@@ -135,7 +131,7 @@ public class Player {
     }
 
     public static void printSets(ArrayList<String> vals) {
-        for (String v : vals ) {
+        for (String v : vals) {
             switch (v) {
                 case "11":
                     System.out.print("J♡ J♢ J♣ J♠ ");
@@ -162,11 +158,11 @@ public class Player {
         //if the user is guessing
         if (getType().equalsIgnoreCase("user")) {
             Random rand = new Random();
-            int randNum = rand.nextInt(100 + 1);
-            if(randNum<dif){
+            int randNum = rand.nextInt(100);
+            if (randNum < dif) {
                 System.out.println("Go fish! ;)");
                 drawCard(deck);
-            }else{
+            } else {
                 if (opponent.getCards(opponent.getHand(), guess).isEmpty()) {
                     //opponent's hand does not have the card we guessed
                     System.out.println("Go fish!");
@@ -195,7 +191,6 @@ public class Player {
                     opponent.drawCard(deck);
                 }
             }
-
         }
 
         //if the computer is guessing
@@ -233,8 +228,8 @@ public class Player {
                     for (int j = 0; j < toRemove.size(); j++) {
                         if (opponent.getHand().get(i).getValue().equals(toRemove.get(j).getValue())) {
                             opponent.removeFromHand(i);
-                            if(opponent.getHand().isEmpty()){
-                                if(!deck.isEmpty()){
+                            if (opponent.getHand().isEmpty()) {
+                                if (!deck.isEmpty()) {
                                     System.out.println("Your hand was empty, you drew a card.");
                                 }
                                 opponent.drawCard(deck);
@@ -251,44 +246,8 @@ public class Player {
             }
         }
     }
-    //This function will shuffle the deck.
-    public void shuffle(ArrayList<Card> deck) {
-      //Loop through the deck
-      for(int i = 0; i < deck.size(); i++) {
-        Card tempCard = new Card('0','0');
-        if(i == 0){
-          //If we select the first card in the deck, swap it with the third.
-          tempCard = deck[i + 2];
-          deck[i+2] = deck[i];
-          deck[i] = tempCard;
-        }
-        if(i+1 == get(deck).size()) {
-          //If we select the last card of the deck, swap it with the third from last.
-          tempCard = deck[i - 2];
-          deck[i-2] = deck[i];
-          deck[i] = deck[i-2];
-        }
-        else {
-          //Randomly determine if a card will be swapped with the one before or after it.
-          Random rand = new Random();
-          int checkSwap = rand.nextInt(0,1);
-          if(checkSwap == 0) {
-            //Swap with the card after it.
-            tempCard = deck[i+1];
-            deck[i+1] = deck[i];
-            deck[i] = tempCard;
-          }
-          else {
-            //Swap with the card before it.
-            tempCard = deck[i-1];
-            deck[i-1] = deck[i];
-            deck[i] = tempCard;
-          }
-        }
-      }
-    }
 
-    private String valueToDisplay(String value){
+    private String valueToDisplay(String value) {
         String display = value;
         switch (value.toLowerCase()) {
             case "11":
@@ -308,6 +267,4 @@ public class Player {
         }
         return display;
     }
-
-
 }
