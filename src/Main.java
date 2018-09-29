@@ -1,11 +1,13 @@
-
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Random;
 
 public class Main {
-
     public static void main(String args[]) {
+
+        //needed for smart computer
+        ArrayList<String> smartComputerMemory = new ArrayList<String>();
+
         //create deck
         ArrayList<Card> deck = new ArrayList<>();
         for (int i = 2; i < 15; i++) {
@@ -19,34 +21,61 @@ public class Main {
             deck.add(club);
             deck.add(spade);
         }
-        shuffleDeck(deck);
+
+        shuffle(deck);
+
         //create two players
         Player user = new Player("user");
         Player computer = new Player("computer");
 
         //add 7 cards to each player's hand
         for (int i = 0; i < 7; i++) {
-            user.drawCard(deck);
-            computer.drawCard(deck);
+            user.drawCard(deck, smartComputerMemory);
+            computer.drawCard(deck, smartComputerMemory);
         }
 
         //start the game
         boolean game = true;
 
-        boolean goodInputD = false;
-        String inputDif = "0";
-        int difficutly = 0;
-        while (!goodInputD) {
+
+        //set the lying chance
+        boolean goodInputL = false;
+        String inputLyingChace = "0";
+        int lyingChance = 0;
+        while (!goodInputL) {
             Scanner reader = new Scanner(System.in);
             System.out.println("Opponent lying % (integer from 1-100): ");
-            inputDif = reader.next();
-            if (isInteger(inputDif)) {
-                difficutly = Integer.parseInt(inputDif);
-                if (difficutly >= 0 && difficutly <= 100) {
-                    goodInputD = true;
+            inputLyingChace = reader.next();
+            if (isInteger(inputLyingChace)) {
+                lyingChance = Integer.parseInt(inputLyingChace);
+                if(lyingChance >= 0 && lyingChance<= 100){
+                    goodInputL = true;
                 }
             }
         }
+
+        //ask user to set smart computer or not
+        boolean goodInputSmart = false;
+        //initializing to 'c', as compiler doesn't like initializing to ''
+        char inputSmart = 'c';
+        while (!goodInputSmart) {
+            Scanner reader = new Scanner(System.in);
+            System.out.println("Will your opponent remember all your guesses?");
+            System.out.println("y - yes");
+            System.out.println("n - no");
+            inputSmart = reader.next().charAt(0);
+            if (inputSmart == 'y' || inputSmart == 'n') {
+                goodInputSmart = true;
+            }
+        }
+
+        boolean isComputerMemoryOn = false;
+        if(inputSmart == 'y'){
+            isComputerMemoryOn = true;
+        }else{
+            isComputerMemoryOn = false;
+        }
+
 
         while (game) {
             //show user their hand
@@ -109,14 +138,35 @@ public class Main {
                 }
             }
 
-            //player guess
-            user.guess(computer, inputGuess, deck, difficutly);
+            smartComputerMemory.add(inputGuess);
 
-            if (!computer.getHand().isEmpty()) {
-                Random rand = new Random();
-                int compGuess = rand.nextInt(computer.getHand().size());
-                computer.guess(user, computer.getHand().get(compGuess).getValue(), deck, difficutly);
+            //player guess
+            user.guess(computer, inputGuess, deck, lyingChance,smartComputerMemory);
+
+            if(!computer.getHand().isEmpty()){
+
+                boolean compterHasCardInMemory = false;
+
+                for(Card c:computer.getHand()){
+                    for(String v:smartComputerMemory){
+                        if(c.getValue().equals(v)){
+                            compterHasCardInMemory = true;
+                        }
+                    }
+                }
+
+                if(compterHasCardInMemory){
+                    Random rand = new Random();
+                    int compGuess = rand.nextInt(smartComputerMemory.size());
+                    computer.guess(user, smartComputerMemory.get(compGuess), deck,lyingChance,smartComputerMemory);
+                }else{
+                    Random rand = new Random();
+                    int compGuess = rand.nextInt(computer.getHand().size());
+                    computer.guess(user, computer.getHand().get(compGuess).getValue(), deck,lyingChance,smartComputerMemory);
+                }
+
             }
+
 
             //end game when user hand is empty
             //note that part of the computer.guess() could take a card from the player, but the player will also draw a new card in the same method
@@ -139,39 +189,33 @@ public class Main {
         }
     }
 
-    //This function will shuffle the deck.
-    public static void shuffleDeck(ArrayList<Card> deck) {
-        //Loop through the deck
-        for (int i = 0; i < deck.size(); i++) {
-            Card tempCard = new Card("0", '0');
-            if (i == 0) {
-                //If we select the first card in the deck, swap it with the third.
-                tempCard = deck.get(i + 2);
-                deck.set(i + 2, deck.get(i));
-                deck.set(i, tempCard);
-            }
-            if (i + 1 == deck.size()) {
-                //If we select the last card of the deck, swap it with the third from last.
-                tempCard = deck.get(i - 2);
-                deck.set(i - 2, deck.get(i));
-                deck.set(i, deck.get(i - 2));
-            } else {
-                //Randomly determine if a card will be swapped with the one before or after it.
-                Random rand = new Random();
-                int checkSwap = rand.nextInt(1);
-                if (checkSwap == 0) {
-                    //Swap with the card after it.
-                    tempCard = deck.get(i + 1);
-                    deck.set(i + 1, deck.get(i));
-                    deck.set(i, tempCard);
-                } else {
-                    //Swap with the card before it.
-                    tempCard = deck.get(i - 1);
-                    deck.set(i - 1, deck.get(i));
-                    deck.set(i, tempCard);
+    public static void shuffle(ArrayList<Card> deck) {
+        ArrayList<Card> newArray = new ArrayList<Card>();
+        for(int i=0;i<deck.size();i++){
+            Card newCard = new Card("0",'0');
+            newArray.add(newCard);
+        }
+        for(int i=0;i<deck.size();i++){
+            Random rand = new Random();
+            int randomIndex = rand.nextInt(deck.size());
+            //try to place card in random index
+            boolean cardPlaced = false;
+            while(!cardPlaced){
+                if(newArray.get(randomIndex).getValue() == "0"){
+                    newArray.set(randomIndex,deck.get(i));
+                    cardPlaced = true;
+                }
+                randomIndex ++;
+                if(randomIndex>=52){
+                    randomIndex = 0;
                 }
             }
         }
+
+        for(int i=0;i<deck.size();i++){
+            deck.set(i,newArray.get(i));
+        }
+
     }
 
     public static boolean isInteger(String input) {
