@@ -54,7 +54,9 @@ public class Player {
     public void drawCard(ArrayList<Card> deck) {
         if (deck.size() > 0) { //do nothing if the deck has no cards
             addToHand(deck.get(0));
+            deck.shuffle();
             deck.remove(0);
+            deck.shuffle();
         }
     }
 
@@ -129,7 +131,7 @@ public class Player {
         }
         System.out.println("");
     }
-    
+
     public static void printSets(ArrayList<String> vals) {
         for (String v : vals ) {
             switch (v) {
@@ -247,4 +249,5 @@ public class Player {
             }
         }
     }
+
 }
