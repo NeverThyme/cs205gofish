@@ -1,0 +1,1007 @@
+
+=== NEW GAME ===
+
+round 1:
+user's hand: 7♡ K♡ A♢ 2♢ 10♣ J♣ 2♣ 
+computer's hand: 3♠ A♡ A♣ 7♣ 5♣ 4♣ 6♠ 
+user's guess: 5
+user's hand: 7♡ K♡ A♢ 2♢ 10♣ J♣ 2♣ 5♣ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ 
+computer's guess: Card@66d3c617
+user's hand: 7♡ K♡ 2♢ 10♣ J♣ 2♣ 5♣ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 
+round 2:
+user's hand: 7♡ K♡ 2♢ 10♣ J♣ 2♣ 5♣ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 
+user's guess: 5
+user's hand: 7♡ K♡ 2♢ 10♣ J♣ 2♣ 5♣ 8♠ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 
+computer's guess: Card@63947c6b
+user's hand: 7♡ K♡ 2♢ 10♣ J♣ 2♣ 5♣ 8♠ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 
+round 3:
+user's hand: 7♡ K♡ 2♢ 10♣ J♣ 2♣ 5♣ 8♠ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 
+user's guess: 13
+user's hand: 7♡ K♡ 2♢ 10♣ J♣ 2♣ 5♣ 8♠ 10♡ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 
+computer's guess: Card@2b193f2d
+user's hand: K♡ 2♢ 10♣ J♣ 2♣ 5♣ 8♠ 10♡ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 7♡ 
+round 4:
+user's hand: K♡ 2♢ 10♣ J♣ 2♣ 5♣ 8♠ 10♡ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 7♡ 
+user's guess: 11
+user's hand: K♡ 2♢ 10♣ J♣ 2♣ 5♣ 8♠ 10♡ 10♢ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 7♡ 
+computer's guess: Card@355da254
+user's hand: K♡ 2♢ 10♣ J♣ 2♣ 5♣ 8♠ 10♡ 10♢ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 7♡ J♢ 
+round 5:
+user's hand: K♡ 2♢ 10♣ J♣ 2♣ 5♣ 8♠ 10♡ 10♢ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 7♡ J♢ 
+user's guess: 10
+user's hand: K♡ 2♢ 10♣ J♣ 2♣ 5♣ 8♠ 10♡ 10♢ A♠ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 7♡ J♢ 
+computer's guess: 13
+user's hand: 2♢ 10♣ J♣ 2♣ 5♣ 8♠ 10♡ 10♢ A♠ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 7♡ J♢ K♡ 
+round 6:
+user's hand: 2♢ 10♣ J♣ 2♣ 5♣ 8♠ 10♡ 10♢ A♠ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 7♡ J♢ K♡ 
+user's guess: 10
+user's hand: 2♢ 10♣ J♣ 2♣ 5♣ 8♠ 10♡ 10♢ A♠ 9♢ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 7♡ J♢ K♡ 
+computer's guess: 10
+user's hand: 2♢ J♣ 2♣ 5♣ 8♠ A♠ 9♢ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 7♡ J♢ K♡ 10♣ 10♡ 10♢ 
+round 7:
+user's hand: 2♢ J♣ 2♣ 5♣ 8♠ A♠ 9♢ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 7♡ J♢ K♡ 10♣ 10♡ 10♢ 
+user's guess: 8
+user's hand: 2♢ J♣ 2♣ 5♣ 8♠ A♠ 9♢ 9♣ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 7♡ J♢ K♡ 10♣ 10♡ 10♢ 
+computer's guess: 5
+user's hand: 2♢ J♣ 2♣ 8♠ A♠ 9♢ 9♣ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 7♡ J♢ K♡ 10♣ 10♡ 10♢ 5♣ 
+round 8:
+user's hand: 2♢ J♣ 2♣ 8♠ A♠ 9♢ 9♣ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 7♡ J♢ K♡ 10♣ 10♡ 10♢ 5♣ 
+user's guess: 9
+user's hand: 2♢ J♣ 2♣ 8♠ A♠ 9♢ 9♣ 9♠ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 7♡ J♢ K♡ 10♣ 10♡ 10♢ 5♣ 
+computer's guess: 8
+user's hand: 2♢ J♣ 2♣ A♠ 9♢ 9♣ 9♠ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 7♡ J♢ K♡ 10♣ 10♡ 10♢ 5♣ 8♠ 
+round 9:
+user's hand: 2♢ J♣ 2♣ A♠ 9♢ 9♣ 9♠ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 7♡ J♢ K♡ 10♣ 10♡ 10♢ 5♣ 8♠ 
+user's guess: 9
+user's hand: 2♢ J♣ 2♣ A♠ 9♢ 9♣ 9♠ J♡ 
+computer's hand: 3♠ A♡ A♣ 7♣ 4♣ 6♠ A♢ 2♡ 7♡ J♢ K♡ 10♣ 10♡ 10♢ 5♣ 8♠ 
+
+=== NEW GAME ===
+
+round 1:
+user's hand: A♣ A♠ 2♣ 3♠ 8♣ 9♢ 3♣ 
+computer's hand: 7♢ J♠ K♡ 4♡ K♣ A♡ 8♢ 
+user's guess: 14
+user's hand: A♣ A♠ 2♣ 3♠ 8♣ 9♢ 3♣ A♡ 
+computer's hand: 7♢ J♠ K♡ 4♡ K♣ 8♢ 
+computer's guess: 11
+user's hand: A♣ A♠ 2♣ 3♠ 8♣ 9♢ 3♣ A♡ 
+computer's hand: 7♢ J♠ K♡ 4♡ K♣ 8♢ 9♣ 
+round 2:
+user's hand: A♣ A♠ 2♣ 3♠ 8♣ 9♢ 3♣ A♡ 
+computer's hand: 7♢ J♠ K♡ 4♡ K♣ 8♢ 9♣ 
+user's guess: 9
+user's hand: A♣ A♠ 2♣ 3♠ 8♣ 9♢ 3♣ A♡ 9♣ 
+computer's hand: 7♢ J♠ K♡ 4♡ K♣ 8♢ 
+computer's guess: 8
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 
+computer's hand: 7♢ J♠ K♡ 4♡ K♣ 8♢ 8♣ 
+round 3:
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 
+computer's hand: 7♢ J♠ K♡ 4♡ K♣ 8♢ 8♣ 
+user's guess: 2
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 
+computer's hand: 7♢ J♠ K♡ 4♡ K♣ 8♢ 8♣ 
+computer's guess: 7
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 
+computer's hand: 7♢ J♠ K♡ 4♡ K♣ 8♢ 8♣ 7♠ 
+round 4:
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 
+computer's hand: 7♢ J♠ K♡ 4♡ K♣ 8♢ 8♣ 7♠ 
+user's guess: 7
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 
+computer's hand: J♠ K♡ 4♡ K♣ 8♢ 8♣ 
+computer's guess: 8
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 
+computer's hand: J♠ K♡ 4♡ K♣ 8♢ 8♣ 6♠ 
+round 5:
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 
+computer's hand: J♠ K♡ 4♡ K♣ 8♢ 8♣ 6♠ 
+user's guess: 14
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 3♢ 
+computer's hand: J♠ K♡ 4♡ K♣ 8♢ 8♣ 6♠ 
+computer's guess: 13
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 3♢ 
+computer's hand: J♠ K♡ 4♡ K♣ 8♢ 8♣ 6♠ 4♠ 
+round 6:
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 3♢ 
+computer's hand: J♠ K♡ 4♡ K♣ 8♢ 8♣ 6♠ 4♠ 
+user's guess: 12
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 3♢ 8♠ 
+computer's hand: J♠ K♡ 4♡ K♣ 8♢ 8♣ 6♠ 4♠ 
+computer's guess: 8
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 3♢ 
+computer's hand: J♠ K♡ 4♡ K♣ 8♢ 8♣ 6♠ 4♠ 8♠ 
+round 7:
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 3♢ 
+computer's hand: J♠ K♡ 4♡ K♣ 8♢ 8♣ 6♠ 4♠ 8♠ 
+user's guess: 7
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 3♢ 10♢ 
+computer's hand: J♠ K♡ 4♡ K♣ 8♢ 8♣ 6♠ 4♠ 8♠ 
+computer's guess: 13
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 3♢ 10♢ 
+computer's hand: J♠ K♡ 4♡ K♣ 8♢ 8♣ 6♠ 4♠ 8♠ 10♠ 
+round 8:
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 3♢ 10♢ 
+computer's hand: J♠ K♡ 4♡ K♣ 8♢ 8♣ 6♠ 4♠ 8♠ 10♠ 
+user's guess: 14
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 3♢ 10♢ J♣ 
+computer's hand: J♠ K♡ 4♡ K♣ 8♢ 8♣ 6♠ 4♠ 8♠ 10♠ 
+computer's guess: 13
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 3♢ 10♢ J♣ 
+computer's hand: J♠ K♡ 4♡ K♣ 8♢ 8♣ 6♠ 4♠ 8♠ 10♠ 3♡ 
+round 9:
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 3♢ 10♢ J♣ 
+computer's hand: J♠ K♡ 4♡ K♣ 8♢ 8♣ 6♠ 4♠ 8♠ 10♠ 3♡ 
+user's guess: 4
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 3♢ 10♢ J♣ 4♡ 4♠ 
+computer's hand: J♠ K♡ K♣ 8♢ 8♣ 6♠ 8♠ 10♠ 3♡ 
+computer's guess: 13
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 3♢ 10♢ J♣ 4♡ 4♠ 
+computer's hand: J♠ K♡ K♣ 8♢ 8♣ 6♠ 8♠ 10♠ 3♡ 4♣ 
+round 10:
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 3♢ 10♢ J♣ 4♡ 4♠ 
+computer's hand: J♠ K♡ K♣ 8♢ 8♣ 6♠ 8♠ 10♠ 3♡ 4♣ 
+user's guess: 1
+user's hand: A♣ A♠ 2♣ 3♠ 9♢ 3♣ A♡ 9♣ 2♠ 7♢ 7♠ 3♢ 10♢ J♣ 4♡ 4♠ 5♡ 
+computer's hand: J♠ K♡ K♣ 8♢ 8♣ 6♠ 8♠ 10♠ 3♡ 4♣ 
+
+=== NEW GAME ===
+
+round 1:
+user's hand: 10♡ A♣ 5♡ 7♣ 4♢ 9♢ 5♣ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 
+user's guess: 5
+user's hand: 10♡ A♣ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 
+computer's guess: 6
+user's hand: 10♡ A♣ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ 
+round 2:
+user's hand: 10♡ A♣ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ 
+user's guess: 10
+user's hand: 10♡ A♣ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ 
+computer's guess: 14
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ 
+round 3:
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ 
+user's guess: 7
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ 
+computer's guess: 14
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ 10♠ 
+round 4:
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ 10♠ 
+user's guess: 9
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ J♡ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ 10♠ 
+computer's guess: 11
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ 10♠ J♡ 
+round 5:
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ 10♠ J♡ 
+user's guess: 5
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 8♣ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ 10♠ J♡ 
+computer's guess: 14
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 8♣ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ 10♠ J♡ Q♠ 
+round 6:
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 8♣ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ 10♠ J♡ Q♠ 
+user's guess: 10
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 8♣ 10♠ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ Q♠ 
+computer's guess: 6
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 8♣ 10♠ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ Q♠ K♢ 
+round 7:
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 8♣ 10♠ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ Q♠ K♢ 
+user's guess: 7
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 8♣ 10♠ 3♣ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ Q♠ K♢ 
+computer's guess: 11
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 8♣ 10♠ 3♣ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ Q♠ K♢ 3♢ 
+round 8:
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 8♣ 10♠ 3♣ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ Q♠ K♢ 3♢ 
+user's guess: 3
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 8♣ 10♠ 3♣ 3♢ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ Q♠ K♢ 
+computer's guess: 8
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 10♠ 3♣ 3♢ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ Q♠ K♢ 8♣ 
+round 9:
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 10♠ 3♣ 3♢ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ Q♠ K♢ 8♣ 
+user's guess: 7
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 10♠ 3♣ 3♢ 6♣ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ Q♠ K♢ 8♣ 
+computer's guess: 12
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 10♠ 3♣ 3♢ 6♣ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ Q♠ K♢ 8♣ 4♠ 
+round 10:
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 10♠ 3♣ 3♢ 6♣ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ Q♠ K♢ 8♣ 4♠ 
+user's guess: 9
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 10♠ 3♣ 3♢ 6♣ Q♢ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ Q♠ K♢ 8♣ 4♠ 
+computer's guess: 2
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 10♠ 3♣ 3♢ 6♣ Q♢ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ Q♠ K♢ 8♣ 4♠ K♠ 
+round 11:
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 10♠ 3♣ 3♢ 6♣ Q♢ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ Q♠ K♢ 8♣ 4♠ K♠ 
+user's guess: 12
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 10♠ 3♣ 3♢ 6♣ Q♢ Q♠ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ K♢ 8♣ 4♠ K♠ 
+computer's guess: 14
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 10♠ 3♣ 3♢ 6♣ Q♢ Q♠ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ K♢ 8♣ 4♠ K♠ 9♡ 
+round 12:
+user's hand: 10♡ 5♡ 7♣ 4♢ 9♢ 5♣ 9♣ 9♠ 10♢ 10♠ 3♣ 3♢ 6♣ Q♢ Q♠ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ K♢ 8♣ 4♠ K♠ 9♡ 
+user's guess: 9
+user's hand: 10♡ 5♡ 7♣ 4♢ 5♣ 10♢ 10♠ 3♣ 3♢ 6♣ Q♢ Q♠ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ K♢ 8♣ 4♠ K♠ 
+computer's guess: 6
+user's hand: 10♡ 5♡ 7♣ 4♢ 5♣ 10♢ 10♠ 3♣ 3♢ Q♢ Q♠ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ K♢ 8♣ 4♠ K♠ 6♣ 
+round 13:
+user's hand: 10♡ 5♡ 7♣ 4♢ 5♣ 10♢ 10♠ 3♣ 3♢ Q♢ Q♠ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ K♢ 8♣ 4♠ K♠ 6♣ 
+user's guess: 12
+user's hand: 10♡ 5♡ 7♣ 4♢ 5♣ 10♢ 10♠ 3♣ 3♢ Q♢ Q♠ 7♠ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ K♢ 8♣ 4♠ K♠ 6♣ 
+computer's guess: 11
+user's hand: 10♡ 5♡ 7♣ 4♢ 5♣ 10♢ 10♠ 3♣ 3♢ Q♢ Q♠ 7♠ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ K♢ 8♣ 4♠ K♠ 6♣ A♡ 
+round 14:
+user's hand: 10♡ 5♡ 7♣ 4♢ 5♣ 10♢ 10♠ 3♣ 3♢ Q♢ Q♠ 7♠ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ K♢ 8♣ 4♠ K♠ 6♣ A♡ 
+user's guess: 5
+user's hand: 10♡ 5♡ 7♣ 4♢ 5♣ 10♢ 10♠ 3♣ 3♢ Q♢ Q♠ 7♠ 6♠ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ K♢ 8♣ 4♠ K♠ 6♣ A♡ 
+computer's guess: 6
+user's hand: 10♡ 5♡ 7♣ 4♢ 5♣ 10♢ 10♠ 3♣ 3♢ Q♢ Q♠ 7♠ 6♠ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ K♢ 8♣ 4♠ K♠ 6♣ A♡ 2♢ 
+round 15:
+user's hand: 10♡ 5♡ 7♣ 4♢ 5♣ 10♢ 10♠ 3♣ 3♢ Q♢ Q♠ 7♠ 6♠ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ K♢ 8♣ 4♠ K♠ 6♣ A♡ 2♢ 
+user's guess: 5
+user's hand: 10♡ 5♡ 7♣ 4♢ 5♣ 10♢ 10♠ 3♣ 3♢ Q♢ Q♠ 7♠ 6♠ 7♡ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ K♢ 8♣ 4♠ K♠ 6♣ A♡ 2♢ 
+computer's guess: 8
+user's hand: 10♡ 5♡ 7♣ 4♢ 5♣ 10♢ 10♠ 3♣ 3♢ Q♢ Q♠ 7♠ 6♠ 7♡ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ K♢ 8♣ 4♠ K♠ 6♣ A♡ 2♢ 8♠ 
+round 16:
+user's hand: 10♡ 5♡ 7♣ 4♢ 5♣ 10♢ 10♠ 3♣ 3♢ Q♢ Q♠ 7♠ 6♠ 7♡ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ K♢ 8♣ 4♠ K♠ 6♣ A♡ 2♢ 8♠ 
+user's guess: 9
+user's hand: 10♡ 5♡ 7♣ 4♢ 5♣ 10♢ 10♠ 3♣ 3♢ Q♢ Q♠ 7♠ 6♠ 7♡ Q♣ 
+computer's hand: K♣ A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ K♢ 8♣ 4♠ K♠ 6♣ A♡ 2♢ 8♠ 
+computer's guess: 6
+user's hand: 10♡ 5♡ 7♣ 4♢ 5♣ 10♢ 10♠ 3♣ 3♢ Q♢ Q♠ 7♠ 6♠ 7♡ Q♣ 
+computer's hand: A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ 8♣ 4♠ 6♣ A♡ 2♢ 8♠ 
+round 17:
+user's hand: 10♡ 5♡ 7♣ 4♢ 5♣ 10♢ 10♠ 3♣ 3♢ Q♢ Q♠ 7♠ 6♠ 7♡ Q♣ 
+computer's hand: A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ 8♣ 4♠ 6♣ A♡ 2♢ 8♠ 
+user's guess: 12
+user's hand: 10♡ 5♡ 7♣ 4♢ 5♣ 10♢ 10♠ 3♣ 3♢ Q♢ Q♠ 7♠ 6♠ 7♡ Q♣ 4♡ 
+computer's hand: A♠ J♣ 6♢ 8♢ 2♠ 6♡ 2♡ A♣ J♡ 8♣ 4♠ 6♣ A♡ 2♢ 8♠ 
+
+=== NEW GAME ===
+
+round 1:
+user's hand: 5♣ 8♣ 3♠ 6♣ 8♡ 10♢ 4♠ 
+computer's hand: 3♢ K♣ 9♠ Q♢ 7♢ 9♡ 9♣ 
+user's guess: 5
+user's hand: 5♣ 8♣ 3♠ 6♣ 8♡ 10♢ 4♠ K♡ 
+computer's hand: 3♢ K♣ 9♠ Q♢ 7♢ 9♡ 9♣ 
+
+=== NEW GAME ===
+
+round 1:
+user's hand: 9♢ 3♢ J♡ J♢ Q♠ 7♢ 7♡ 
+computer's hand: 10♢ 7♠ 8♡ J♣ 2♢ 5♠ 4♢ 
+user's guess: 9
+user's hand: 9♢ 3♢ J♡ J♢ Q♠ 7♢ 7♡ 10♣ 
+computer's hand: 10♢ 7♠ 8♡ J♣ 2♢ 5♠ 4♢ 
+
+=== NEW GAME ===
+
+round 1:
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 9♡ 5♢ 
+computer's hand: 2♠ 7♡ 6♣ 8♣ J♣ 2♡ 6♡ 
+user's guess: 10
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 9♡ 5♢ 9♢ 
+computer's hand: 2♠ 7♡ 6♣ 8♣ J♣ 2♡ 6♡ 
+computer's guess: 2
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 9♡ 5♢ 9♢ 
+computer's hand: 2♠ 7♡ 6♣ 8♣ J♣ 2♡ 6♡ Q♠ 
+round 2:
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 9♡ 5♢ 9♢ 
+computer's hand: 2♠ 7♡ 6♣ 8♣ J♣ 2♡ 6♡ Q♠ 
+user's guess: 2
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 9♡ 5♢ 9♢ 2♠ 2♡ 
+computer's hand: 7♡ 6♣ 8♣ J♣ 6♡ Q♠ 
+computer's guess: 6
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 9♡ 5♢ 9♢ 2♠ 2♡ 
+computer's hand: 7♡ 6♣ 8♣ J♣ 6♡ Q♠ 8♢ 
+round 3:
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 9♡ 5♢ 9♢ 2♠ 2♡ 
+computer's hand: 7♡ 6♣ 8♣ J♣ 6♡ Q♠ 8♢ 
+user's guess: 5
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 9♡ 5♢ 9♢ 2♠ 2♡ K♡ 
+computer's hand: 7♡ 6♣ 8♣ J♣ 6♡ Q♠ 8♢ 
+computer's guess: 7
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 9♡ 5♢ 9♢ 2♠ 2♡ K♡ 
+computer's hand: 7♡ 6♣ 8♣ J♣ 6♡ Q♠ 8♢ 6♢ 
+round 4:
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 9♡ 5♢ 9♢ 2♠ 2♡ K♡ 
+computer's hand: 7♡ 6♣ 8♣ J♣ 6♡ Q♠ 8♢ 6♢ 
+user's guess: 7
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 9♡ 5♢ 9♢ 2♠ 2♡ K♡ 7♡ 
+computer's hand: 6♣ 8♣ J♣ 6♡ Q♠ 8♢ 6♢ 
+computer's guess: 8
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 9♡ 5♢ 9♢ 2♠ 2♡ K♡ 7♡ 
+computer's hand: 6♣ 8♣ J♣ 6♡ Q♠ 8♢ 6♢ 9♠ 
+round 5:
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 9♡ 5♢ 9♢ 2♠ 2♡ K♡ 7♡ 
+computer's hand: 6♣ 8♣ J♣ 6♡ Q♠ 8♢ 6♢ 9♠ 
+user's guess: 13
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 9♡ 5♢ 9♢ 2♠ 2♡ K♡ 7♡ 4♢ 
+computer's hand: 6♣ 8♣ J♣ 6♡ Q♠ 8♢ 6♢ 9♠ 
+computer's guess: 9
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 5♢ 2♠ 2♡ K♡ 7♡ 4♢ 
+computer's hand: 6♣ 8♣ J♣ 6♡ Q♠ 8♢ 6♢ 9♠ 9♡ 9♢ 
+round 6:
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 5♢ 2♠ 2♡ K♡ 7♡ 4♢ 
+computer's hand: 6♣ 8♣ J♣ 6♡ Q♠ 8♢ 6♢ 9♠ 9♡ 9♢ 
+user's guess: 8
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 5♢ 2♠ 2♡ K♡ 7♡ 4♢ 8♣ 8♢ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 
+computer's guess: 12
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 5♢ 2♠ 2♡ K♡ 7♡ 4♢ 8♣ 8♢ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 3♠ 
+round 7:
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 5♢ 2♠ 2♡ K♡ 7♡ 4♢ 8♣ 8♢ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 3♠ 
+user's guess: 14
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 5♢ 2♠ 2♡ K♡ 7♡ 4♢ 8♣ 8♢ 4♡ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 3♠ 
+computer's guess: 6
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 5♢ 2♠ 2♡ K♡ 7♡ 4♢ 8♣ 8♢ 4♡ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 3♠ 4♣ 
+round 8:
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 5♢ 2♠ 2♡ K♡ 7♡ 4♢ 8♣ 8♢ 4♡ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 3♠ 4♣ 
+user's guess: 3
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 5♢ 2♠ 2♡ K♡ 7♡ 4♢ 8♣ 8♢ 4♡ 3♠ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 4♣ 
+computer's guess: 12
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 5♢ 2♠ 2♡ K♡ 7♡ 4♢ 8♣ 8♢ 4♡ 3♠ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 4♣ 4♠ 
+round 9:
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 5♢ 2♠ 2♡ K♡ 7♡ 4♢ 8♣ 8♢ 4♡ 3♠ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 4♣ 4♠ 
+user's guess: 4
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 5♢ 2♠ 2♡ K♡ 7♡ 8♣ 8♢ 3♠ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 
+computer's guess: 12
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 5♢ 2♠ 2♡ K♡ 7♡ 8♣ 8♢ 3♠ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 7♢ 
+round 10:
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 5♢ 2♠ 2♡ K♡ 7♡ 8♣ 8♢ 3♠ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 7♢ 
+user's guess: 13
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 5♢ 2♠ 2♡ K♡ 7♡ 8♣ 8♢ 3♠ 7♠ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 7♢ 
+computer's guess: 9
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 5♢ 2♠ 2♡ K♡ 7♡ 8♣ 8♢ 3♠ 7♠ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 7♢ 10♢ 
+round 11:
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 5♢ 2♠ 2♡ K♡ 7♡ 8♣ 8♢ 3♠ 7♠ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 7♢ 10♢ 
+user's guess: 5
+user's hand: 8♡ 5♠ 3♣ 7♣ 2♢ 5♢ 2♠ 2♡ K♡ 7♡ 8♣ 8♢ 3♠ 7♠ 3♢ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 7♢ 10♢ 
+computer's guess: 10
+user's hand: 8♡ 5♠ 3♣ 2♢ 5♢ 2♠ 2♡ K♡ 8♣ 8♢ 3♠ 3♢ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 10♢ 
+round 12:
+user's hand: 8♡ 5♠ 3♣ 2♢ 5♢ 2♠ 2♡ K♡ 8♣ 8♢ 3♠ 3♢ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 10♢ 
+user's guess: 13
+user's hand: 8♡ 5♠ 3♣ 2♢ 5♢ 2♠ 2♡ K♡ 8♣ 8♢ 3♠ 3♢ 10♡ 
+computer's hand: 6♣ J♣ 6♡ Q♠ 6♢ 9♠ 9♡ 9♢ 10♢ 
+
+=== NEW GAME ===
+
+round 1:
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 
+computer's hand: 4♡ 7♡ 9♠ 7♣ 5♣ 2♢ 9♣ 
+user's guess: 5
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 
+computer's hand: 4♡ 7♡ 9♠ 7♣ 2♢ 9♣ 
+computer's guess: 2
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 
+computer's hand: 4♡ 7♡ 9♠ 7♣ 2♢ 9♣ 8♢ 
+round 2:
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 
+computer's hand: 4♡ 7♡ 9♠ 7♣ 2♢ 9♣ 8♢ 
+user's guess: 7
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 8♢ 
+computer's guess: 4
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 8♢ 8♡ 
+round 3:
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 8♢ 8♡ 
+user's guess: 14
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 8♢ 8♡ 
+computer's guess: 2
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 8♢ 8♡ 2♡ 
+round 4:
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 8♢ 8♡ 2♡ 
+user's guess: 8
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ 
+computer's guess: 4
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ 10♢ 
+round 5:
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ 10♢ 
+user's guess: 10
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ 
+computer's guess: 9
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ J♣ 
+round 6:
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ J♣ 
+user's guess: 11
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ 
+computer's guess: 4
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ Q♡ 
+round 7:
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ Q♡ 
+user's guess: 6
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ Q♡ 
+computer's guess: 9
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ Q♡ 3♢ 
+round 8:
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ Q♡ 3♢ 
+user's guess: 7
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ K♢ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ Q♡ 3♢ 
+computer's guess: 9
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ K♢ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ Q♡ 3♢ K♣ 
+round 9:
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ K♢ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ Q♡ 3♢ K♣ 
+user's guess: 13
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ K♢ K♣ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ Q♡ 3♢ 
+computer's guess: 2
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ K♢ K♣ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ Q♡ 3♢ 6♡ 
+round 10:
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ K♢ K♣ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ Q♡ 3♢ 6♡ 
+user's guess: 5
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 6♣ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ K♢ K♣ 9♢ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ Q♡ 3♢ 6♡ 
+computer's guess: 6
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ K♢ K♣ 9♢ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ Q♡ 3♢ 6♡ 6♣ 
+round 11:
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ K♢ K♣ 9♢ 
+computer's hand: 4♡ 9♠ 2♢ 9♣ 2♡ Q♡ 3♢ 6♡ 6♣ 
+user's guess: 9
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 
+computer's hand: 4♡ 2♢ 2♡ Q♡ 3♢ 6♡ 6♣ 
+computer's guess: 2
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 
+computer's hand: 4♡ 2♢ 2♡ Q♡ 3♢ 6♡ 6♣ A♢ 
+round 12:
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 
+computer's hand: 4♡ 2♢ 2♡ Q♡ 3♢ 6♡ 6♣ A♢ 
+user's guess: 2
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 
+computer's guess: 14
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 
+round 13:
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 
+user's guess: 5
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 8♠ 5♣ 7♡ 7♣ 10♡ 8♢ 8♡ 10♢ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 
+computer's guess: 10
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 8♠ 5♣ 7♡ 7♣ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 10♡ 10♢ 
+round 14:
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 8♠ 5♣ 7♡ 7♣ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 10♡ 10♢ 
+user's guess: 13
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 8♠ 5♣ 7♡ 7♣ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 10♡ 10♢ 
+computer's guess: 10
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 8♠ 5♣ 7♡ 7♣ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 10♡ 10♢ 3♡ 
+round 15:
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 8♠ 5♣ 7♡ 7♣ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 10♡ 10♢ 3♡ 
+user's guess: 2
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 8♠ 5♣ 7♡ 7♣ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 3♠ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 10♡ 10♢ 3♡ 
+computer's guess: 6
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 8♠ 5♣ 7♡ 7♣ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 3♠ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 10♡ 10♢ 3♡ 4♣ 
+round 16:
+user's hand: 5♡ 5♠ 7♠ J♢ J♠ 8♠ 5♣ 7♡ 7♣ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 3♠ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 10♡ 10♢ 3♡ 4♣ 
+user's guess: 5
+user's hand: 7♠ J♢ J♠ 8♠ 7♡ 7♣ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 3♠ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 10♡ 10♢ 3♡ 4♣ 
+computer's guess: 14
+user's hand: 7♠ J♢ J♠ 8♠ 7♡ 7♣ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 3♠ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 10♡ 10♢ 3♡ 4♣ 6♢ 
+round 17:
+user's hand: 7♠ J♢ J♠ 8♠ 7♡ 7♣ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 3♠ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 10♡ 10♢ 3♡ 4♣ 6♢ 
+user's guess: 8
+user's hand: 7♠ J♢ J♠ 8♠ 7♡ 7♣ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 3♠ 6♠ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 10♡ 10♢ 3♡ 4♣ 6♢ 
+computer's guess: 3
+user's hand: 7♠ J♢ J♠ 8♠ 7♡ 7♣ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 6♠ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 10♡ 10♢ 3♡ 4♣ 6♢ 3♠ 
+round 18:
+user's hand: 7♠ J♢ J♠ 8♠ 7♡ 7♣ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 6♠ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 10♡ 10♢ 3♡ 4♣ 6♢ 3♠ 
+user's guess: 11
+user's hand: J♢ J♠ 8♠ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 6♠ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 10♡ 10♢ 3♡ 4♣ 6♢ 3♠ 
+computer's guess: 3
+user's hand: J♢ J♠ 8♠ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 6♠ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 10♡ 10♢ 3♡ 4♣ 6♢ 3♠ 8♣ 
+round 19:
+user's hand: J♢ J♠ 8♠ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 6♠ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 10♡ 10♢ 3♡ 4♣ 6♢ 3♠ 8♣ 
+user's guess: 7
+user's hand: J♢ J♠ 8♠ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 6♠ 10♣ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 10♠ 10♡ 10♢ 3♡ 4♣ 6♢ 3♠ 8♣ 
+computer's guess: 10
+user's hand: J♢ J♠ 8♠ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 6♠ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 3♡ 4♣ 6♢ 3♠ 8♣ 
+round 20:
+user's hand: J♢ J♠ 8♠ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 6♠ 
+computer's hand: 4♡ Q♡ 3♢ 6♡ 6♣ A♢ 3♡ 4♣ 6♢ 3♠ 8♣ 
+user's guess: 3
+user's hand: J♢ J♠ 8♠ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 6♠ 3♢ 3♡ 3♠ 
+computer's hand: 4♡ Q♡ 6♡ 6♣ A♢ 4♣ 6♢ 8♣ 
+computer's guess: 14
+user's hand: J♢ J♠ 8♠ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 6♠ 3♢ 3♡ 3♠ 
+computer's hand: 4♡ Q♡ 6♡ 6♣ A♢ 4♣ 6♢ 8♣ Q♣ 
+round 21:
+user's hand: J♢ J♠ 8♠ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 6♠ 3♢ 3♡ 3♠ 
+computer's hand: 4♡ Q♡ 6♡ 6♣ A♢ 4♣ 6♢ 8♣ Q♣ 
+user's guess: 11
+user's hand: J♢ J♠ 8♠ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 6♠ 3♢ 3♡ 3♠ 4♠ 
+computer's hand: 4♡ Q♡ 6♡ 6♣ A♢ 4♣ 6♢ 8♣ Q♣ 
+computer's guess: 6
+user's hand: J♢ J♠ 8♠ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 3♢ 3♡ 3♠ 4♠ 
+computer's hand: 4♡ Q♡ A♢ 4♣ 8♣ Q♣ 
+round 22:
+user's hand: J♢ J♠ 8♠ 8♢ 8♡ J♣ Q♢ K♢ K♣ 9♢ 9♠ 9♣ 2♢ 2♡ 4♢ 2♠ 3♢ 3♡ 3♠ 4♠ 
+computer's hand: 4♡ Q♡ A♢ 4♣ 8♣ Q♣ 
+user's guess: 3
+user's hand: J♢ J♠ 8♠ 8♢ 8♡ J♣ Q♢ K♢ K♣ 2♢ 2♡ 4♢ 2♠ 3♢ 3♡ 3♠ 4♠ 
+computer's hand: 4♡ Q♡ A♢ 4♣ 8♣ Q♣ 
+computer's guess: 8
+user's hand: J♢ J♠ J♣ Q♢ K♢ K♣ 2♢ 2♡ 4♢ 2♠ 3♢ 3♡ 3♠ 4♠ 
+computer's hand: 4♡ Q♡ A♢ 4♣ Q♣ 
+round 23:
+user's hand: J♢ J♠ J♣ Q♢ K♢ K♣ 2♢ 2♡ 4♢ 2♠ 3♢ 3♡ 3♠ 4♠ 
+computer's hand: 4♡ Q♡ A♢ 4♣ Q♣ 
+user's guess: 13
+user's hand: Q♢ K♢ K♣ 2♢ 2♡ 4♢ 2♠ 3♢ 3♡ 3♠ 4♠ 
+computer's hand: 4♡ Q♡ A♢ 4♣ Q♣ 
+computer's guess: 4
+user's hand: Q♢ K♢ K♣ 2♢ 2♡ 2♠ 3♢ 3♡ 3♠ 
+computer's hand: Q♡ A♢ Q♣ 
+round 24:
+user's hand: Q♢ K♢ K♣ 2♢ 2♡ 2♠ 3♢ 3♡ 3♠ 
+computer's hand: Q♡ A♢ Q♣ 
+user's guess: 5
+user's hand: Q♢ K♢ K♣ 2♢ 2♡ 2♠ 3♢ 3♡ 3♠ Q♠ 
+computer's hand: Q♡ A♢ Q♣ 
+computer's guess: 12
+user's hand: K♢ K♣ 2♢ 2♡ 2♠ 3♢ 3♡ 3♠ 
+computer's hand: A♢ 
+round 25:
+user's hand: K♢ K♣ 2♢ 2♡ 2♠ 3♢ 3♡ 3♠ 
+computer's hand: A♢ 
+user's guess: 3
+user's hand: K♢ K♣ 2♢ 2♡ 2♠ 3♢ 3♡ 3♠ K♡ 
+computer's hand: A♢ 
+computer's guess: 14
+user's hand: K♢ K♣ 2♢ 2♡ 2♠ 3♢ 3♡ 3♠ K♡ 
+computer's hand: A♢ K♠ 
+round 26:
+user's hand: K♢ K♣ 2♢ 2♡ 2♠ 3♢ 3♡ 3♠ K♡ 
+computer's hand: A♢ K♠ 
+user's guess: 13
+user's hand: 2♢ 2♡ 2♠ 3♢ 3♡ 3♠ 
+computer's hand: A♢ 
+computer's guess: 14
+user's hand: 2♢ 2♡ 2♠ 3♢ 3♡ 3♠ 
+computer's hand: A♢ A♡ 
+round 27:
+user's hand: 2♢ 2♡ 2♠ 3♢ 3♡ 3♠ 
+computer's hand: A♢ A♡ 
+user's guess: 3
+user's hand: 2♢ 2♡ 2♠ 3♢ 3♡ 3♠ A♣ 
+computer's hand: A♢ A♡ 
+computer's guess: 14
+user's hand: 2♢ 2♡ 2♠ 3♢ 3♡ 3♠ 
+computer's hand: A♢ A♡ A♣ 
+round 28:
+user's hand: 2♢ 2♡ 2♠ 3♢ 3♡ 3♠ 
+computer's hand: A♢ A♡ A♣ 
+user's guess: 2
+user's hand: 3♢ 3♡ 3♠ 
+computer's hand: A♢ A♡ A♣ 
+computer's guess: 14
+user's hand: 3♢ 3♡ 3♠ 
+computer's hand: 3♣ 
+round 29:
+user's hand: 3♢ 3♡ 3♠ 
+computer's hand: 3♣ 
+user's guess: 3
+user's hand: 
+computer's hand: 
+user's hand: 
+computer's hand: 
+user's sets: 5♡ 5♢ 5♣ 5♠ 7♡ 7♢ 7♣ 7♠ 9♡ 9♢ 9♣ 9♠ J♡ J♢ J♣ J♠ K♡ K♢ K♣ K♠ 2♡ 2♢ 2♣ 2♠ 3♡ 3♢ 3♣ 3♠ 
+computers's sets: 10♡ 10♢ 10♣ 10♠ 6♡ 6♢ 6♣ 6♠ 8♡ 8♢ 8♣ 8♠ 4♡ 4♢ 4♣ 4♠ Q♡ Q♢ Q♣ Q♠ A♡ A♢ A♣ A♠ 
+
+=== NEW GAME ===
+
+round 1:
+user's hand: 6♢ 9♡ 9♣ 7♢ 10♡ 10♣ 10♠ 
+computer's hand: 7♣ 9♢ 3♢ 7♠ 4♣ 2♡ 4♠ 
+user's guess: 10
+user's hand: 6♢ 9♡ 9♣ 7♢ 10♡ 10♣ 10♠ J♢ 
+computer's hand: 7♣ 9♢ 3♢ 7♠ 4♣ 2♡ 4♠ 
+
+=== NEW GAME ===
+
+round 1:
+user's hand: A♢ A♠ 2♢ 3♡ 7♠ 9♣ 10♣ 
+computer's hand: A♣ 2♡ 2♠ 5♣ 4♣ 4♡ 10♠ 
+user's guess: 14
+user's hand: A♢ A♠ 2♢ 3♡ 7♠ 9♣ 10♣ A♣ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 10♠ 
+computer's guess: 2
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 10♠ 2♢ 
+round 2:
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 10♠ 2♢ 
+user's guess: 13
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 10♠ 2♢ 
+computer's guess: 2
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 10♠ 2♢ 6♢ 
+round 3:
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 10♠ 2♢ 6♢ 
+user's guess: 3
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 10♠ 2♢ 6♢ 
+computer's guess: 2
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 10♠ 2♢ 6♢ Q♣ 
+round 4:
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 10♠ 2♢ 6♢ Q♣ 
+user's guess: 10
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 2♢ 6♢ Q♣ 
+computer's guess: 12
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 2♢ 6♢ Q♣ Q♢ 
+round 5:
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 2♢ 6♢ Q♣ Q♢ 
+user's guess: 7
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 2♢ 6♢ Q♣ Q♢ 
+computer's guess: 2
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 2♢ 6♢ Q♣ Q♢ K♠ 
+round 6:
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 2♢ 6♢ Q♣ Q♢ K♠ 
+user's guess: 13
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 2♢ 6♢ Q♣ Q♢ 
+computer's guess: 4
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 2♢ 6♢ Q♣ Q♢ 6♠ 
+round 7:
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 2♢ 6♢ Q♣ Q♢ 6♠ 
+user's guess: 11
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 2♢ 6♢ Q♣ Q♢ 6♠ 
+computer's guess: 12
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 2♢ 6♢ Q♣ Q♢ 6♠ 8♠ 
+round 8:
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 2♢ 6♢ Q♣ Q♢ 6♠ 8♠ 
+user's guess: 13
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 
+computer's hand: 2♡ 2♠ 5♣ 4♣ 4♡ 2♢ 6♢ Q♣ Q♢ 6♠ 8♠ 
+computer's guess: 2
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 
+computer's hand: 5♣ 4♣ 4♡ 6♢ Q♣ Q♢ 6♠ 8♠ 
+round 9:
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 
+computer's hand: 5♣ 4♣ 4♡ 6♢ Q♣ Q♢ 6♠ 8♠ 
+user's guess: 8
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 
+computer's hand: 5♣ 4♣ 4♡ 6♢ Q♣ Q♢ 6♠ 
+computer's guess: 12
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 
+computer's hand: 5♣ 4♣ 4♡ 6♢ Q♣ Q♢ 6♠ 3♢ 
+round 10:
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 
+computer's hand: 5♣ 4♣ 4♡ 6♢ Q♣ Q♢ 6♠ 3♢ 
+user's guess: 14
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 
+computer's hand: 5♣ 4♣ 4♡ 6♢ Q♣ Q♢ 6♠ 3♢ 
+computer's guess: 3
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 
+computer's hand: 5♣ 4♣ 4♡ 6♢ Q♣ Q♢ 6♠ 3♢ 10♢ 
+round 11:
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 
+computer's hand: 5♣ 4♣ 4♡ 6♢ Q♣ Q♢ 6♠ 3♢ 10♢ 
+user's guess: 6
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 6♢ 6♠ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 3♢ 10♢ 
+computer's guess: 3
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 6♢ 6♠ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 3♢ 10♢ J♣ 
+round 12:
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 6♢ 6♠ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 3♢ 10♢ J♣ 
+user's guess: 13
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 6♢ 6♠ Q♡ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 3♢ 10♢ J♣ 
+computer's guess: 3
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 6♢ 6♠ Q♡ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 3♢ 10♢ J♣ 8♡ 
+round 13:
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 6♢ 6♠ Q♡ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 3♢ 10♢ J♣ 8♡ 
+user's guess: 13
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 6♢ 6♠ Q♡ 3♠ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 3♢ 10♢ J♣ 8♡ 
+computer's guess: 3
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 6♢ 6♠ Q♡ 3♠ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 3♢ 10♢ J♣ 8♡ 3♣ 
+round 14:
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 6♢ 6♠ Q♡ 3♠ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 3♢ 10♢ J♣ 8♡ 3♣ 
+user's guess: 9
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 6♢ 6♠ Q♡ 3♠ 4♠ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 3♢ 10♢ J♣ 8♡ 3♣ 
+computer's guess: 3
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 6♢ 6♠ Q♡ 3♠ 4♠ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 3♢ 10♢ J♣ 8♡ 3♣ 7♢ 
+round 15:
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 6♢ 6♠ Q♡ 3♠ 4♠ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 3♢ 10♢ J♣ 8♡ 3♣ 7♢ 
+user's guess: 9
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 6♢ 6♠ Q♡ 3♠ 4♠ J♢ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 3♢ 10♢ J♣ 8♡ 3♣ 7♢ 
+computer's guess: 8
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 6♢ 6♠ Q♡ 3♠ 4♠ J♢ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 3♢ 10♢ J♣ 8♡ 3♣ 7♢ 9♠ 
+round 16:
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 6♢ 6♠ Q♡ 3♠ 4♠ J♢ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 3♢ 10♢ J♣ 8♡ 3♣ 7♢ 9♠ 
+user's guess: 9
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 8♢ 9♡ 8♠ 6♣ 6♢ 6♠ Q♡ 3♠ 4♠ J♢ 9♠ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 3♢ 10♢ J♣ 8♡ 3♣ 7♢ 
+computer's guess: 8
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 9♡ 6♣ 6♢ 6♠ Q♡ 3♠ 4♠ J♢ 9♠ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 3♢ 10♢ J♣ 8♡ 3♣ 7♢ 8♢ 8♠ 
+round 17:
+user's hand: A♢ A♠ 3♡ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 9♡ 6♣ 6♢ 6♠ Q♡ 3♠ 4♠ J♢ 9♠ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 3♢ 10♢ J♣ 8♡ 3♣ 7♢ 8♢ 8♠ 
+user's guess: 3
+user's hand: A♢ A♠ 7♠ 9♣ 10♣ A♣ J♠ 5♢ 10♠ K♡ K♠ 9♡ 6♣ 6♢ 6♠ Q♡ 4♠ J♢ 9♠ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 10♢ J♣ 8♡ 7♢ 8♢ 8♠ 
+computer's guess: 11
+user's hand: A♢ A♠ 7♠ 9♣ 10♣ A♣ 5♢ 10♠ K♡ K♠ 9♡ 6♣ 6♢ 6♠ Q♡ 4♠ 9♠ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 10♢ J♣ 8♡ 7♢ 8♢ 8♠ J♠ J♢ 
+round 18:
+user's hand: A♢ A♠ 7♠ 9♣ 10♣ A♣ 5♢ 10♠ K♡ K♠ 9♡ 6♣ 6♢ 6♠ Q♡ 4♠ 9♠ 
+computer's hand: 5♣ 4♣ 4♡ Q♣ Q♢ 10♢ J♣ 8♡ 7♢ 8♢ 8♠ J♠ J♢ 
+user's guess: 12
+user's hand: A♢ A♠ 7♠ 9♣ 10♣ A♣ 5♢ 10♠ K♡ K♠ 9♡ 6♣ 6♢ 6♠ Q♡ 4♠ 9♠ Q♣ Q♢ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ J♣ 8♡ 7♢ 8♢ 8♠ J♠ J♢ 
+computer's guess: 7
+user's hand: A♢ A♠ 9♣ 10♣ A♣ 5♢ 10♠ K♡ K♠ 9♡ 6♣ 6♢ 6♠ Q♡ 4♠ 9♠ Q♣ Q♢ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ J♣ 8♡ 7♢ 8♢ 8♠ J♠ J♢ 7♠ 
+round 19:
+user's hand: A♢ A♠ 9♣ 10♣ A♣ 5♢ 10♠ K♡ K♠ 9♡ 6♣ 6♢ 6♠ Q♡ 4♠ 9♠ Q♣ Q♢ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ J♣ 8♡ 7♢ 8♢ 8♠ J♠ J♢ 7♠ 
+user's guess: 11
+user's hand: A♢ A♠ 9♣ 10♣ A♣ 5♢ 10♠ K♡ K♠ 9♡ 6♣ 6♢ 6♠ Q♡ 4♠ 9♠ Q♣ Q♢ J♣ J♠ J♢ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 8♡ 7♢ 8♢ 8♠ 7♠ 
+computer's guess: 7
+user's hand: A♢ A♠ 9♣ 10♣ A♣ 5♢ 10♠ K♡ K♠ 9♡ 6♣ 6♢ 6♠ Q♡ 4♠ 9♠ Q♣ Q♢ J♣ J♠ J♢ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 8♡ 7♢ 8♢ 8♠ 7♠ Q♠ 
+round 20:
+user's hand: A♢ A♠ 9♣ 10♣ A♣ 5♢ 10♠ K♡ K♠ 9♡ 6♣ 6♢ 6♠ Q♡ 4♠ 9♠ Q♣ Q♢ J♣ J♠ J♢ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 8♡ 7♢ 8♢ 8♠ 7♠ Q♠ 
+user's guess: 13
+user's hand: A♢ A♠ 9♣ 10♣ A♣ 5♢ 10♠ K♡ K♠ 9♡ 6♣ 6♢ 6♠ Q♡ 4♠ 9♠ Q♣ Q♢ J♣ J♠ J♢ 8♣ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 8♡ 7♢ 8♢ 8♠ 7♠ Q♠ 
+computer's guess: 10
+user's hand: A♢ A♠ 9♣ A♣ 5♢ K♡ K♠ 9♡ 6♣ 6♢ 6♠ Q♡ 4♠ 9♠ Q♣ Q♢ J♣ J♠ J♢ 8♣ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 8♡ 7♢ 8♢ 8♠ 7♠ Q♠ 10♣ 10♠ 
+round 21:
+user's hand: A♢ A♠ 9♣ A♣ 5♢ K♡ K♠ 9♡ 6♣ 6♢ 6♠ Q♡ 4♠ 9♠ Q♣ Q♢ J♣ J♠ J♢ 8♣ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 8♡ 7♢ 8♢ 8♠ 7♠ Q♠ 10♣ 10♠ 
+user's guess: 6
+user's hand: A♢ A♠ 9♣ A♣ 5♢ K♡ K♠ 9♡ 6♣ 6♢ 6♠ Q♡ 4♠ 9♠ Q♣ Q♢ J♣ J♠ J♢ 8♣ K♢ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 8♡ 7♢ 8♢ 8♠ 7♠ Q♠ 10♣ 10♠ 
+computer's guess: 12
+user's hand: A♢ A♠ 9♣ A♣ 5♢ K♡ K♠ 9♡ 6♣ 6♢ 6♠ 4♠ 9♠ J♣ J♠ J♢ 8♣ K♢ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 8♡ 7♢ 8♢ 8♠ 7♠ 10♣ 10♠ 
+round 22:
+user's hand: A♢ A♠ 9♣ A♣ 5♢ K♡ K♠ 9♡ 6♣ 6♢ 6♠ 4♠ 9♠ J♣ J♠ J♢ 8♣ K♢ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 8♡ 7♢ 8♢ 8♠ 7♠ 10♣ 10♠ 
+user's guess: 6
+user's hand: A♢ A♠ 9♣ A♣ 5♢ K♡ K♠ 9♡ 6♣ 6♢ 6♠ 4♠ 9♠ J♣ J♠ J♢ 8♣ K♢ 4♢ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 8♡ 7♢ 8♢ 8♠ 7♠ 10♣ 10♠ 
+computer's guess: 10
+user's hand: A♢ A♠ 9♣ A♣ 5♢ K♡ K♠ 9♡ 6♣ 6♢ 6♠ 4♠ 9♠ J♣ J♠ J♢ 8♣ K♢ 4♢ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 8♡ 7♢ 8♢ 8♠ 7♠ 10♣ 10♠ 9♢ 
+round 23:
+user's hand: A♢ A♠ 9♣ A♣ 5♢ K♡ K♠ 9♡ 6♣ 6♢ 6♠ 4♠ 9♠ J♣ J♠ J♢ 8♣ K♢ 4♢ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 8♡ 7♢ 8♢ 8♠ 7♠ 10♣ 10♠ 9♢ 
+user's guess: 13
+user's hand: A♢ A♠ 9♣ A♣ 5♢ K♡ K♠ 9♡ 6♣ 6♢ 6♠ 4♠ 9♠ J♣ J♠ J♢ 8♣ K♢ 4♢ 7♣ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 8♡ 7♢ 8♢ 8♠ 7♠ 10♣ 10♠ 9♢ 
+computer's guess: 8
+user's hand: A♢ A♠ 9♣ A♣ 5♢ K♡ K♠ 9♡ 6♣ 6♢ 6♠ 4♠ 9♠ J♣ J♠ J♢ K♢ 4♢ 7♣ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 7♢ 7♠ 10♣ 10♠ 9♢ 
+round 24:
+user's hand: A♢ A♠ 9♣ A♣ 5♢ K♡ K♠ 9♡ 6♣ 6♢ 6♠ 4♠ 9♠ J♣ J♠ J♢ K♢ 4♢ 7♣ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 7♢ 7♠ 10♣ 10♠ 9♢ 
+user's guess: 13
+user's hand: A♢ A♠ 9♣ A♣ 5♢ K♡ K♠ 9♡ 6♣ 6♢ 6♠ 4♠ 9♠ K♢ 4♢ 7♣ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 7♢ 7♠ 10♣ 10♠ 9♢ 
+computer's guess: 10
+user's hand: A♢ A♠ 9♣ A♣ 5♢ K♡ K♠ 9♡ 6♣ 6♢ 6♠ 4♠ 9♠ K♢ 4♢ 7♣ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 7♢ 7♠ 10♣ 10♠ 9♢ 5♡ 
+round 25:
+user's hand: A♢ A♠ 9♣ A♣ 5♢ K♡ K♠ 9♡ 6♣ 6♢ 6♠ 4♠ 9♠ K♢ 4♢ 7♣ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 7♢ 7♠ 10♣ 10♠ 9♢ 5♡ 
+user's guess: 6
+user's hand: A♢ A♠ 9♣ A♣ 5♢ 9♡ 6♣ 6♢ 6♠ 4♠ 9♠ 4♢ 7♣ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 7♢ 7♠ 10♣ 10♠ 9♢ 5♡ 
+computer's guess: 9
+user's hand: A♢ A♠ A♣ 5♢ 6♣ 6♢ 6♠ 4♠ 4♢ 7♣ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 7♢ 7♠ 10♣ 10♠ 5♡ 
+round 26:
+user's hand: A♢ A♠ A♣ 5♢ 6♣ 6♢ 6♠ 4♠ 4♢ 7♣ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 7♢ 7♠ 10♣ 10♠ 5♡ 
+user's guess: 14
+user's hand: A♢ A♠ A♣ 5♢ 6♣ 6♢ 6♠ 4♠ 4♢ 7♣ 7♡ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 7♢ 7♠ 10♣ 10♠ 5♡ 
+computer's guess: 10
+user's hand: A♢ A♠ A♣ 5♢ 6♣ 6♢ 6♠ 4♠ 4♢ 7♣ 7♡ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 7♢ 7♠ 10♣ 10♠ 5♡ 6♡ 
+round 27:
+user's hand: A♢ A♠ A♣ 5♢ 6♣ 6♢ 6♠ 4♠ 4♢ 7♣ 7♡ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 7♢ 7♠ 10♣ 10♠ 5♡ 6♡ 
+user's guess: 7
+user's hand: A♢ A♠ A♣ 5♢ 6♣ 6♢ 6♠ 4♠ 4♢ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 10♣ 10♠ 5♡ 6♡ 
+computer's guess: 6
+user's hand: A♢ A♠ A♣ 5♢ 4♠ 4♢ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 10♣ 10♠ 5♡ 
+round 28:
+user's hand: A♢ A♠ A♣ 5♢ 4♠ 4♢ 
+computer's hand: 5♣ 4♣ 4♡ 10♢ 10♣ 10♠ 5♡ 
+user's guess: 5
+user's hand: A♢ A♠ A♣ 5♢ 4♠ 4♢ 5♣ 5♡ 
+computer's hand: 4♣ 4♡ 10♢ 10♣ 10♠ 
+computer's guess: 10
+user's hand: A♢ A♠ A♣ 5♢ 4♠ 4♢ 5♣ 5♡ 
+computer's hand: 4♣ 4♡ 10♢ 10♣ 10♠ 5♠ 
+round 29:
+user's hand: A♢ A♠ A♣ 5♢ 4♠ 4♢ 5♣ 5♡ 
+computer's hand: 4♣ 4♡ 10♢ 10♣ 10♠ 5♠ 
+user's guess: 14
+user's hand: A♢ A♠ A♣ 5♢ 4♠ 4♢ 5♣ 5♡ 10♡ 
+computer's hand: 4♣ 4♡ 10♢ 10♣ 10♠ 5♠ 
+computer's guess: 5
+user's hand: A♢ A♠ A♣ 4♠ 4♢ 10♡ 
+computer's hand: 4♣ 4♡ 10♢ 10♣ 10♠ 
+round 30:
+user's hand: A♢ A♠ A♣ 4♠ 4♢ 10♡ 
+computer's hand: 4♣ 4♡ 10♢ 10♣ 10♠ 
+user's guess: 14
+user's hand: 4♠ 4♢ 10♡ 
+computer's hand: 4♣ 4♡ 10♢ 10♣ 10♠ 
+computer's guess: 10
+user's hand: 4♠ 4♢ 
+computer's hand: 4♣ 4♡ 
+round 31:
+user's hand: 4♠ 4♢ 
+computer's hand: 4♣ 4♡ 
+user's guess: 4
+user's hand: 
+computer's hand: 
+user's hand: 
+computer's hand: 
+user's sets: 3♡ 3♢ 3♣ 3♠ J♡ J♢ J♣ J♠ K♡ K♢ K♣ K♠ 7♡ 7♢ 7♣ 7♠ A♡ A♢ A♣ A♠ 4♡ 4♢ 4♣ 4♠ 
+computers's sets: 2♡ 2♢ 2♣ 2♠ Q♡ Q♢ Q♣ Q♠ 8♡ 8♢ 8♣ 8♠ 9♡ 9♢ 9♣ 9♠ 6♡ 6♢ 6♣ 6♠ 5♡ 5♢ 5♣ 5♠ 10♡ 10♢ 10♣ 10♠ 
