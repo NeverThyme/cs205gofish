@@ -33,10 +33,7 @@ public class Player {
 
     public void removeFromHand(int i) {
         if (hand.size() >= i) {
-            //System.out.println("Removing " + hand.get(i).getSuit());
             hand.remove(i);
-        } else {
-            System.out.println("YOU SHOULD NEVER SEE THIS");
         }
     }
 
