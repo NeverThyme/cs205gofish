@@ -53,8 +53,11 @@ public class Player {
     //draw a new card
     public void drawCard(ArrayList<Card> deck) {
         if (deck.size() > 0) { //do nothing if the deck has no cards
+            //check for 4OfAKind
+            String valueToCheck = deck.get(0).getValue();
             addToHand(deck.get(0));
             deck.remove(0);
+            checkFourOfAKind(valueToCheck,deck);
         }
     }
 
@@ -94,10 +97,11 @@ public class Player {
             }
             addFourOfAKindSets(value);
             if (getType().equals("user")) {
-                System.out.println("You got a set of " + value + "s!");
+                System.out.println("You got a set of " + valueToDisplay(value) + "s!");
             }
             if (getHand().isEmpty()) {
-                if (getType().equals("user")) {
+
+                if (getType().equals("user") && !deck.isEmpty()) {
                     System.out.println("Your hand was empty, you drew a card.");
                 }
                 drawCard(deck);
@@ -134,16 +138,16 @@ public class Player {
         for (String v : vals ) {
             switch (v) {
                 case "11":
-                    System.out.print("J♡ J♢ J♣ J♠");
+                    System.out.print("J♡ J♢ J♣ J♠ ");
                     break;
                 case "12":
-                    System.out.print("Q♡ Q♢ Q♣ Q♠");
+                    System.out.print("Q♡ Q♢ Q♣ Q♠ ");
                     break;
                 case "13":
-                    System.out.print("K♡ K♢ K♣ K♠");
+                    System.out.print("K♡ K♢ K♣ K♠ ");
                     break;
                 case "14":
-                    System.out.print("A♡ A♢ A♣ A♠");
+                    System.out.print("A♡ A♢ A♣ A♠ ");
                     break;
                 default:
                     System.out.print(v + "♡ " + v + "♢ " + v + "♣ " + v + "♠");
@@ -152,12 +156,9 @@ public class Player {
         }
     }
 
-    public void guess(Player opponent, String guess, ArrayList<Card> deck, int dif) { //method should include opponents response to guess
+    public void guess(Player opponent, String guess, ArrayList<Card> deck, int dif) {
         ArrayList<Card> toRemove = new ArrayList<>();
 
-        if (this == opponent) {
-            throw new IllegalArgumentException();
-        } //don't let user guess whats in own hand
         //if the user is guessing
         if (getType().equalsIgnoreCase("user")) {
             Random rand = new Random();
@@ -205,7 +206,7 @@ public class Player {
                 Scanner reader = new Scanner(System.in);
                 System.out.print("Your Hand: ");
                 displayCards(opponent.getHand());
-                System.out.println("Do you have any " + guess + "s?");
+                System.out.println("Do you have any " + valueToDisplay(guess) + "s?");
                 System.out.println("y - yes");
                 System.out.println("n - no");
                 inputHaveCard = reader.next().charAt(0);
@@ -233,6 +234,9 @@ public class Player {
                         if (opponent.getHand().get(i).getValue().equals(toRemove.get(j).getValue())) {
                             opponent.removeFromHand(i);
                             if(opponent.getHand().isEmpty()){
+                                if(!deck.isEmpty()){
+                                    System.out.println("Your hand was empty, you drew a card.");
+                                }
                                 opponent.drawCard(deck);
                             }
                         }
@@ -241,10 +245,33 @@ public class Player {
                 checkFourOfAKind(guess, deck);
                 if (!playerReallyHasCard) {
                     System.out.println("ok then, where is it?");
-                    System.out.println("LIAR!\n");
+                    System.out.println("...LIAR!\n");
                     drawCard(deck);
                 }
             }
         }
     }
+
+    private String valueToDisplay(String value){
+        String display = value;
+        switch (value.toLowerCase()) {
+            case "11":
+                display = "J";
+                break;
+            case "12":
+                display = "Q";
+                break;
+            case "13":
+                display = "K";
+                break;
+            case "14":
+                display = "A";
+                break;
+            default:
+                break;
+        }
+        return display;
+    }
+
+
 }

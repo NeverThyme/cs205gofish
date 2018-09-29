@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -38,7 +37,7 @@ public class Main {
         int difficutly = 0;
         while (!goodInputD) {
             Scanner reader = new Scanner(System.in);
-            System.out.println("Difficulty (0-100): ");
+            System.out.println("Opponent lying % (integer from 1-100): ");
             inputDif = reader.next();
             if (isInteger(inputDif)) {
                 difficutly = Integer.parseInt(inputDif);
@@ -85,7 +84,7 @@ public class Main {
                 System.out.println("q for Queen");
                 System.out.println("k for King");
                 System.out.println("a for Ace");
-                inputGuess = reader.next().substring(0, 1);
+                inputGuess = reader.next();
                 //convert guess to number form
                 switch (inputGuess.toLowerCase()) {
                     case "j":
@@ -109,21 +108,17 @@ public class Main {
                     goodInput = true;
                 }
             }
+
             //player guess
             user.guess(computer, inputGuess, deck, difficutly);
 
-            //we should make computer guess random
-            Random rand = new Random();
-            int compGuess = rand.nextInt(computer.getHand().size());
-            computer.guess(user, computer.getHand().get(compGuess).getValue(), deck,difficutly);
+            if(!computer.getHand().isEmpty()){
+                Random rand = new Random();
+                int compGuess = rand.nextInt(computer.getHand().size());
+                computer.guess(user, computer.getHand().get(compGuess).getValue(), deck,difficutly);
+            }
 
-            //maybe we should make player.guess return a string of information to use for the I/O?
-            //so it would look like String turnData1 = user.guess(computer,input_Guess,deck);
-            //                      String turnData2 = computer.guess(user,<what ever the random int is>, deck);
-            //                      write turnData1 and turnData2 to I/O
-            //                      we could also add a turn line number to the beginning of the string depending on how many times the game loop has run
-            //                      the turn data string look something like:
-            //                      "Round 7: user-hand: A A 3 J  computer-hand: 7 A 2 Q K 6  user guess: A  user-hand-after-guess: A A A 3 J ..........."
+
             //end game when user hand is empty
             //note that part of the computer.guess() could take a card from the player, but the player will also draw a new card in the same method
             if (user.getHand().size() <= 0 && deck.isEmpty()) {
