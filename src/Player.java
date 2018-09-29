@@ -1,0 +1,313 @@
+
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Scanner;
+
+public class Player {
+
+    private ArrayList<Card> hand = new ArrayList<Card>();
+    private ArrayList<String> fourOfAKindSets = new ArrayList<String>(); //each item is a value from "2" to "14"
+    private String type; //computer or user
+
+    //constructor
+    public Player(String type) {
+        if (!(type.equals("computer") || type.equals("user"))) {
+            throw new IllegalArgumentException();
+        } //restrict domain on type
+        this.type = type;
+    }
+
+    //get hand
+    public ArrayList<Card> getHand() {
+        return hand;
+    }
+
+    //get type
+    public String getType() {
+        return type;
+    }
+
+    public void addToHand(Card c) {
+        hand.add(c);
+    }
+
+    public void removeFromHand(int i) {
+        if (hand.size() >= i) {
+            hand.remove(i);
+        }
+    }
+
+    public ArrayList<Card> getCards(ArrayList<Card> hand, String query) {
+        ArrayList<Card> foundCards = new ArrayList<>();
+        for (int i = 0; i < hand.size(); i++) {
+            if (hand.get(i).getValue().equals(query)) {
+                foundCards.add(hand.get(i));
+            }
+        }
+        return foundCards;
+    }
+
+    //draw a new card
+    public void drawCard(ArrayList<Card> deck) {
+        if (deck.size() > 0) { //do nothing if the deck has no cards
+            //check for 4OfAKind
+            String valueToCheck = deck.get(0).getValue();
+            addToHand(deck.get(0));
+            shuffle(deck);
+            deck.remove(0);
+
+            shuffle(deck);
+            checkFourOfAKind(valueToCheck,deck);
+        }
+    }
+
+    //get a player's four-of-a-kind sets
+    public ArrayList<String> getFourOfAKindSets() {
+        return fourOfAKindSets;
+    }
+
+    //add a set to a payer's four-of-a-kind set
+    public void addFourOfAKindSets(String value) {
+        if (!fourOfAKindSets.contains(value)) { //it doesn't make sense to have more than on four-of-a-kind sets for the same value
+            fourOfAKindSets.add(value);
+        }
+    }
+
+    // check if hand has 4 of a kind
+    public boolean checkFourOfAKind(String value, ArrayList<Card> deck) {
+        int ctr = 0;
+        for (int i = 0; i < hand.size(); i++) {
+            if (hand.get(i).getValue().equals(value)) {
+                ctr++;
+            }
+        }
+        if (ctr >= 4) {
+            ArrayList<Card> toRemove = new ArrayList<>();
+            for (int i = 0; i < getHand().size(); i++) {
+                if (getHand().get(i).getValue().equals(value)) {
+                    toRemove.add(getHand().get(i));
+                }
+            }
+            for (int i = 0; i < toRemove.size(); i++) {
+                for (int j = 0; j < getHand().size(); j++) {
+                    if (getHand().get(j).getValue().equals(toRemove.get(i).getValue())) {
+                        removeFromHand(j);
+                    }
+                }
+            }
+            addFourOfAKindSets(value);
+            if (getType().equals("user")) {
+                System.out.println("You got a set of " + valueToDisplay(value) + "s!");
+            }
+            if (getHand().isEmpty()) {
+
+                if (getType().equals("user") && !deck.isEmpty()) {
+                    System.out.println("Your hand was empty, you drew a card.");
+                }
+                drawCard(deck);
+            }
+            return true;
+        }
+        return false;
+    }
+
+    public static void displayCards(ArrayList<Card> cards) {
+        for (Card card : cards) {
+            switch (card.getValue()) {
+                case "11":
+                    System.out.print("J" + card.getSuit() + " ");
+                    break;
+                case "12":
+                    System.out.print("Q" + card.getSuit() + " ");
+                    break;
+                case "13":
+                    System.out.print("K" + card.getSuit() + " ");
+                    break;
+                case "14":
+                    System.out.print("A" + card.getSuit() + " ");
+                    break;
+                default:
+                    System.out.print(card.getValue() + card.getSuit() + " ");
+                    break;
+            }
+        }
+        System.out.println("");
+    }
+
+    public static void printSets(ArrayList<String> vals) {
+        for (String v : vals ) {
+            switch (v) {
+                case "11":
+                    System.out.print("J♡ J♢ J♣ J♠ ");
+                    break;
+                case "12":
+                    System.out.print("Q♡ Q♢ Q♣ Q♠ ");
+                    break;
+                case "13":
+                    System.out.print("K♡ K♢ K♣ K♠ ");
+                    break;
+                case "14":
+                    System.out.print("A♡ A♢ A♣ A♠ ");
+                    break;
+                default:
+                    System.out.print(v + "♡ " + v + "♢ " + v + "♣ " + v + "♠");
+                    break;
+            }
+        }
+    }
+
+    public void guess(Player opponent, String guess, ArrayList<Card> deck, int dif) {
+        ArrayList<Card> toRemove = new ArrayList<>();
+
+        //if the user is guessing
+        if (getType().equalsIgnoreCase("user")) {
+            Random rand = new Random();
+            int randNum = rand.nextInt(100 + 1);
+            if(randNum<dif){
+                System.out.println("Go fish! ;)");
+                drawCard(deck);
+            }else{
+                if (opponent.getCards(opponent.getHand(), guess).isEmpty()) {
+                    //opponent's hand does not have the card we guessed
+                    System.out.println("Go fish!");
+                    drawCard(deck);
+                } else {
+                    //opponent's hand does contain the queried card
+                    for (int i = 0; i < opponent.getHand().size(); i++) {
+                        //find all cards in opponent's hand that match the player's
+                        if (opponent.getHand().get(i).getValue().equals(guess)) {
+                            // add card to player's hand and remove card from opponent's hand
+                            addToHand(opponent.getHand().get(i));
+                            toRemove.add(opponent.getHand().get(i));
+                        }
+                    }
+                    for (int i = 0; i < opponent.getHand().size(); i++) {
+                        for (int j = 0; j < toRemove.size(); j++) {
+                            if (opponent.getHand().get(i).getValue().equals(toRemove.get(j).getValue())) {
+                                opponent.removeFromHand(i);
+                            }
+                        }
+                    }
+                    checkFourOfAKind(guess, deck);
+                }
+                //add a card to opponent's hand if their hand is empty
+                if (opponent.getHand().isEmpty() && !deck.isEmpty()) {
+                    opponent.drawCard(deck);
+                }
+            }
+
+        }
+
+        //if the computer is guessing
+        if (getType().equals("computer")) {
+            boolean goodInput = false;
+            char inputHaveCard = 'c';
+            while (!goodInput) {
+                Scanner reader = new Scanner(System.in);
+                System.out.print("Your Hand: ");
+                displayCards(opponent.getHand());
+                System.out.println("Do you have any " + valueToDisplay(guess) + "s?");
+                System.out.println("y - yes");
+                System.out.println("n - no");
+                inputHaveCard = reader.next().charAt(0);
+
+                //check if input has correct domain
+                if (inputHaveCard == 'y' || inputHaveCard == 'n') {
+                    goodInput = true;
+                }
+            }
+            if (inputHaveCard == 'n') {
+                drawCard(deck);
+            } else if (inputHaveCard == 'y') {
+                boolean playerReallyHasCard = false;
+                for (int i = 0; i < opponent.getHand().size(); i++) {
+                    //find all cards in opponent's hand that match the player's
+                    if (opponent.getHand().get(i).getValue().equals(guess)) {
+                        // add card to player's hand and remove card from opponent's hand
+                        addToHand(opponent.getHand().get(i));
+                        toRemove.add(opponent.getHand().get(i));
+                        playerReallyHasCard = true;
+                    }
+                }
+                for (int i = 0; i < opponent.getHand().size(); i++) {
+                    for (int j = 0; j < toRemove.size(); j++) {
+                        if (opponent.getHand().get(i).getValue().equals(toRemove.get(j).getValue())) {
+                            opponent.removeFromHand(i);
+                            if(opponent.getHand().isEmpty()){
+                                if(!deck.isEmpty()){
+                                    System.out.println("Your hand was empty, you drew a card.");
+                                }
+                                opponent.drawCard(deck);
+                            }
+                        }
+                    }
+                }
+                checkFourOfAKind(guess, deck);
+                if (!playerReallyHasCard) {
+                    System.out.println("ok then, where is it?");
+                    System.out.println("...LIAR!\n");
+                    drawCard(deck);
+                }
+            }
+        }
+    }
+    //This function will shuffle the deck.
+    public void shuffle(ArrayList<card> deck) {
+      //Loop through the deck
+      for(int i = 0; i < get(deck).size(); i++) {
+        Card tempCard = new Card();
+        if(i == 0){
+          //If we select the first card in the deck, swap it with the third.
+          tempCard = deck[i + 2].getValue();
+          deck[i+2] = deck[i].getValue();
+          deck[i] = tempCard.getValue();
+        }
+        if(i+1 == get(deck).size()) {
+          //If we select the last card of the deck, swap it with the third from last.
+          tempCard = deck[i - 2];
+          deck[i-2] = deck[i];
+          deck[i] = deck[i-2];
+        }
+        else {
+          //Randomly determine if a card will be swapped with the one before or after it.
+          Random rand = new Random();
+          int checkSwap = rand.nextInt(0,1);
+          if(checkSwap == 0) {
+            //Swap with the card after it.
+            tempCard = deck[i+1];
+            deck[i+1] = deck[i];
+            deck[i] = tempCard;
+          }
+          else {
+            //Swap with the card before it.
+            tempCard = deck[i-1];
+            deck[i-1] = deck[i];
+            deck[i] = tempCard;
+          }
+        }
+      }
+    }
+
+    private String valueToDisplay(String value){
+        String display = value;
+        switch (value.toLowerCase()) {
+            case "11":
+                display = "J";
+                break;
+            case "12":
+                display = "Q";
+                break;
+            case "13":
+                display = "K";
+                break;
+            case "14":
+                display = "A";
+                break;
+            default:
+                break;
+        }
+        return display;
+    }
+
+
+}
