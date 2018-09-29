@@ -252,15 +252,15 @@ public class Player {
         }
     }
     //This function will shuffle the deck.
-    public void shuffle(ArrayList<card> deck) {
+    public void shuffle(ArrayList<Card> deck) {
       //Loop through the deck
-      for(int i = 0; i < get(deck).size(); i++) {
-        Card tempCard = new Card();
+      for(int i = 0; i < deck.size(); i++) {
+        Card tempCard = new Card('0','0');
         if(i == 0){
           //If we select the first card in the deck, swap it with the third.
-          tempCard = deck[i + 2].getValue();
-          deck[i+2] = deck[i].getValue();
-          deck[i] = tempCard.getValue();
+          tempCard = deck[i + 2];
+          deck[i+2] = deck[i];
+          deck[i] = tempCard;
         }
         if(i+1 == get(deck).size()) {
           //If we select the last card of the deck, swap it with the third from last.
