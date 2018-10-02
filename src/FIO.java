@@ -1,5 +1,6 @@
 import java.io.*;
 
+//class to handle file IO
 public class FIO {
     public boolean fWrite(String fName, String in) {
         try {

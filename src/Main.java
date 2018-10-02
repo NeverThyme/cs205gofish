@@ -4,12 +4,12 @@ import java.util.Random;
 
 public class Main {
     public static void main(String args[]) {
-
+		//open a new output log file
         FIO fio = new FIO();
         String fName = "src/gameLogs.txt";
-
+		
         fio.fWrite(fName,"\n=== NEW GAME ===\n");
-
+		//initialize rounds for use in output logs
         int round = 0;
 
         //needed for smart computer
@@ -28,7 +28,7 @@ public class Main {
             deck.add(club);
             deck.add(spade);
         }
-
+		//ensure random start order
         shuffle(deck);
 
         //create two players
@@ -75,7 +75,8 @@ public class Main {
                 goodInputSmart = true;
             }
         }
-
+		
+		//set computer memory based on input
         boolean isComputerMemoryOn = false;
         if(inputSmart == 'y'){
             isComputerMemoryOn = true;
@@ -83,7 +84,7 @@ public class Main {
             isComputerMemoryOn = false;
         }
 
-
+		//start game loop
         while (game) {
 
             round++;
@@ -146,11 +147,11 @@ public class Main {
                     goodInput = true;
                 }
             }
-
+			//add user's guess to computer's memory
             smartComputerMemory.add(inputGuess);
 
             //player guess
-
+			
             String output = Integer.toString(round);
             output="round "+output + ":";
             fio.fWrite(fName,output);
@@ -171,13 +172,12 @@ public class Main {
             output = "computer's hand: "+computer.handToString();
             fio.fWrite(fName,output);
 
-
+			//if the computer has cards
             if(!computer.getHand().isEmpty()){
 
                 boolean compterHasCardInMemory = false;
 
-
-
+				//get an array, validGuess, based on what the computer has in its hand and memory
                 ArrayList<String> validGuess = new ArrayList<String>();
                 for(Card c:computer.getHand()){
                     for(String v: smartComputerMemory){
@@ -188,8 +188,8 @@ public class Main {
                     }
                 }
 
-
-
+				//if computer has cards in ValidGuess and the user set computer memory on then pick a random guess from valid guesses
+				//if not, guess randomly based on computer's hand
                 if(compterHasCardInMemory && isComputerMemoryOn){
                     Random rand = new Random();
                     int compGuess = rand.nextInt(validGuess.size());
@@ -205,13 +205,14 @@ public class Main {
                 }
 
             }
-
+			
+			//output player hands to log
             output = "user's hand: "+user.handToString();
             fio.fWrite(fName,output);
             output = "computer's hand: "+ computer.handToString();
             fio.fWrite(fName,output);
 
-
+			
             //end game when user hand is empty
             //note that part of the computer.guess() could take a card from the player, but the player will also draw a new card in the same method
             if (user.getHand().size() <= 0 && deck.isEmpty()) {
@@ -236,7 +237,8 @@ public class Main {
             }
         }
     }
-
+	
+	//method that takes an array of cards and randomly reorganizes the indexes
     public static void shuffle(ArrayList<Card> deck) {
         ArrayList<Card> newArray = new ArrayList<Card>();
         for(int i=0;i<deck.size();i++){
@@ -265,7 +267,8 @@ public class Main {
         }
 
     }
-
+	
+	//checks to see if a given string is an integer
     public static boolean isInteger(String input) {
         try {
             Integer.parseInt(input);
@@ -275,7 +278,7 @@ public class Main {
         }
     }
 
-
+	//converts integer to face card value
     private static String valueToDisplay(String value){
         String display = value;
         switch (value.toLowerCase()) {

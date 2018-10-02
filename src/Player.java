@@ -25,17 +25,20 @@ public class Player {
     public String getType() {
         return type;
     }
-
+	
+	//adds a card to the hand
     public void addToHand(Card c) {
         hand.add(c);
     }
-
+	
+	//removes card from player's hand
     public void removeFromHand(int i) {
         if (hand.size() >= i) {
             hand.remove(i);
         }
     }
 
+	//gets cards in hand that match a guess
     public ArrayList<Card> getCards(ArrayList<Card> hand, String query) {
         ArrayList<Card> foundCards = new ArrayList<>();
         for (int i = 0; i < hand.size(); i++) {
@@ -112,6 +115,7 @@ public class Player {
         return false;
     }
 
+	//converts integer to face card value
     public static void displayCards(ArrayList<Card> cards) {
         for (Card card : cards) {
             switch (card.getValue()) {
@@ -134,7 +138,8 @@ public class Player {
         }
         System.out.println("");
     }
-
+	
+	//prints sets and converts into face value
     public static void printSets(ArrayList<String> vals) {
         for (String v : vals ) {
             switch (v) {
@@ -156,7 +161,8 @@ public class Player {
             }
         }
     }
-
+	
+	//takes a player guess and gets opponent's response
     public void guess(Player opponent, String guess, ArrayList<Card> deck, int dif, ArrayList<String> smartComputerMemory) {
         ArrayList<Card> toRemove = new ArrayList<>();
 
@@ -252,7 +258,8 @@ public class Player {
             }
         }
     }
-
+	
+	//converts int to face card values
     private String valueToDisplay(String value){
         String display = value;
         switch (value.toLowerCase()) {
@@ -273,7 +280,8 @@ public class Player {
         }
         return display;
     }
-
+	
+	//converts hand to a string for log
     public String handToString(){
         String output = "";
         for(Card c:hand){
@@ -281,7 +289,8 @@ public class Player {
         }
         return output;
     }
-
+	
+	//converts four of a kind sets to a string
     public String FourOfAKindSetsToString(){
         String output = "";
         for(String v:getFourOfAKindSets()){
