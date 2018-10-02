@@ -161,7 +161,7 @@ public class Main {
             output = "computer's hand: "+computer.handToString();
             fio.fWrite(fName,output);
 
-            output = "user's guess: "+inputGuess;
+            output = "user's guess: "+ valueToDisplay(inputGuess);
             fio.fWrite(fName,output);
 
             user.guess(computer, inputGuess, deck, lyingChance,smartComputerMemory);
@@ -193,13 +193,13 @@ public class Main {
                 if(compterHasCardInMemory && isComputerMemoryOn){
                     Random rand = new Random();
                     int compGuess = rand.nextInt(validGuess.size());
-                    output = "computer's guess: "+validGuess.get(compGuess);
+                    output = "computer's guess: "+ valueToDisplay(validGuess.get(compGuess));
                     computer.guess(user, validGuess.get(compGuess), deck,lyingChance,smartComputerMemory);
                     fio.fWrite(fName,output);
                 }else{
                     Random rand2 = new Random();
                     int compGuess2 = rand2.nextInt(computer.getHand().size());
-                    output = "computer's guess: "+computer.getHand().get(compGuess2).getValue();
+                    output = "computer's guess: "+ valueToDisplay(computer.getHand().get(compGuess2).getValue());
                     computer.guess(user, computer.getHand().get(compGuess2).getValue(), deck,lyingChance,smartComputerMemory);
                     fio.fWrite(fName,output);
                 }
@@ -208,7 +208,7 @@ public class Main {
 
             output = "user's hand: "+user.handToString();
             fio.fWrite(fName,output);
-            output = "computer's hand: "+computer.handToString();
+            output = "computer's hand: "+ computer.handToString();
             fio.fWrite(fName,output);
 
 
@@ -274,4 +274,27 @@ public class Main {
             return false;
         }
     }
+
+
+    private static String valueToDisplay(String value){
+        String display = value;
+        switch (value.toLowerCase()) {
+            case "11":
+                display = "J";
+                break;
+            case "12":
+                display = "Q";
+                break;
+            case "13":
+                display = "K";
+                break;
+            case "14":
+                display = "A";
+                break;
+            default:
+                break;
+        }
+        return display;
+    }
+
 }
