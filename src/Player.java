@@ -54,7 +54,7 @@ public class Player {
             String valueToCheck = deck.get(0).getValue();
             addToHand(deck.get(0));
             deck.remove(0);
-            checkFourOfAKind(valueToCheck,deck,smartComputerMemory);
+            checkFourOfAKind(valueToCheck, deck, smartComputerMemory);
         }
     }
 
@@ -95,9 +95,11 @@ public class Player {
             addFourOfAKindSets(value);
             if (getType().equals("user")) {
                 System.out.println("You got a set of " + valueToDisplay(value) + "s!");
-                while(smartComputerMemory.contains(value)){
+                while (smartComputerMemory.contains(value)) {
                     smartComputerMemory.remove(value);
                 }
+            } else {
+                System.out.println("Opponent got a set of " + valueToDisplay(value) + "s!");
             }
             if (getHand().isEmpty()) {
 
@@ -133,9 +135,9 @@ public class Player {
         }
         System.out.println("");
     }
-    
+
     public static void printSets(ArrayList<String> vals) {
-        for (String v : vals ) {
+        for (String v : vals) {
             switch (v) {
                 case "11":
                     System.out.print("J♡ J♢ J♣ J♠ ");
@@ -163,10 +165,10 @@ public class Player {
         if (getType().equalsIgnoreCase("user")) {
             Random rand = new Random();
             int randNum = rand.nextInt(100 + 1);
-            if(randNum<dif){
+            if (randNum < dif) {
                 System.out.println("Go fish! ;)");
                 drawCard(deck, smartComputerMemory);
-            }else{
+            } else {
                 if (opponent.getCards(opponent.getHand(), guess).isEmpty()) {
                     //opponent's hand does not have the card we guessed
                     System.out.println("Go fish!");
@@ -188,7 +190,7 @@ public class Player {
                             }
                         }
                     }
-                    checkFourOfAKind(guess, deck,smartComputerMemory);
+                    checkFourOfAKind(guess, deck, smartComputerMemory);
                 }
                 //add a card to opponent's hand if their hand is empty
                 if (opponent.getHand().isEmpty() && !deck.isEmpty()) {
@@ -233,8 +235,8 @@ public class Player {
                     for (int j = 0; j < toRemove.size(); j++) {
                         if (opponent.getHand().get(i).getValue().equals(toRemove.get(j).getValue())) {
                             opponent.removeFromHand(i);
-                            if(opponent.getHand().isEmpty()){
-                                if(!deck.isEmpty()){
+                            if (opponent.getHand().isEmpty()) {
+                                if (!deck.isEmpty()) {
                                     System.out.println("Your hand was empty, you drew a card.");
                                 }
                                 opponent.drawCard(deck, smartComputerMemory);
@@ -242,7 +244,7 @@ public class Player {
                         }
                     }
                 }
-                checkFourOfAKind(guess, deck,smartComputerMemory);
+                checkFourOfAKind(guess, deck, smartComputerMemory);
                 if (!playerReallyHasCard) {
                     System.out.println("ok then, where is it?");
                     System.out.println("...LIAR!\n");
@@ -252,7 +254,7 @@ public class Player {
         }
     }
 
-    private String valueToDisplay(String value){
+    private String valueToDisplay(String value) {
         String display = value;
         switch (value.toLowerCase()) {
             case "11":
@@ -272,6 +274,5 @@ public class Player {
         }
         return display;
     }
-
 
 }

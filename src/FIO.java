@@ -1,6 +1,8 @@
+
 import java.io.*;
 
 public class FIO {
+
     public boolean fWrite(String fName, String in) {
         try {
             PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(fName, true)));
