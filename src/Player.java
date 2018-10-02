@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
@@ -25,20 +26,20 @@ public class Player {
     public String getType() {
         return type;
     }
-	
-	//adds a card to the hand
+
+    //adds a card to the hand
     public void addToHand(Card c) {
         hand.add(c);
     }
-	
-	//removes card from player's hand
+
+    //removes card from player's hand
     public void removeFromHand(int i) {
         if (hand.size() >= i) {
             hand.remove(i);
         }
     }
 
-	//gets cards in hand that match a guess
+    //gets cards in hand that match a guess
     public ArrayList<Card> getCards(ArrayList<Card> hand, String query) {
         ArrayList<Card> foundCards = new ArrayList<>();
         for (int i = 0; i < hand.size(); i++) {
@@ -56,7 +57,7 @@ public class Player {
             String valueToCheck = deck.get(0).getValue();
             addToHand(deck.get(0));
             deck.remove(0);
-            checkFourOfAKind(valueToCheck,deck,smartComputerMemory);
+            checkFourOfAKind(valueToCheck, deck, smartComputerMemory);
         }
     }
 
@@ -97,10 +98,10 @@ public class Player {
             addFourOfAKindSets(value);
             if (getType().equals("user")) {
                 System.out.println("You got a set of " + valueToDisplay(value) + "s!");
-                while(smartComputerMemory.contains(value)){
+                while (smartComputerMemory.contains(value)) {
                     smartComputerMemory.remove(value);
                 }
-            }else{
+            } else {
                 System.out.println("Your opponent got a set of " + valueToDisplay(value) + "s!");
             }
             if (getHand().isEmpty()) {
@@ -115,7 +116,7 @@ public class Player {
         return false;
     }
 
-	//converts integer to face card value
+    //converts integer to face card value
     public static void displayCards(ArrayList<Card> cards) {
         for (Card card : cards) {
             switch (card.getValue()) {
@@ -138,10 +139,10 @@ public class Player {
         }
         System.out.println("");
     }
-	
-	//prints sets and converts into face value
+
+    //prints sets and converts into face value
     public static void printSets(ArrayList<String> vals) {
-        for (String v : vals ) {
+        for (String v : vals) {
             switch (v) {
                 case "11":
                     System.out.print("J♡ J♢ J♣ J♠ ");
@@ -161,8 +162,8 @@ public class Player {
             }
         }
     }
-	
-	//takes a player guess and gets opponent's response
+
+    //takes a player guess and gets opponent's response
     public void guess(Player opponent, String guess, ArrayList<Card> deck, int dif, ArrayList<String> smartComputerMemory) {
         ArrayList<Card> toRemove = new ArrayList<>();
 
@@ -170,10 +171,11 @@ public class Player {
         if (getType().equalsIgnoreCase("user")) {
             Random rand = new Random();
             int randNum = rand.nextInt(100 + 1);
-            if(randNum<dif){
+            //if the computer is set to lie, have the user draw a card
+            if (randNum < dif) {
                 System.out.println("Go fish! ;)");
                 drawCard(deck, smartComputerMemory);
-            }else{
+            } else { //check the opponent's hands for the guessed card, if the opponent has the card, take it. If not, draw a card
                 if (opponent.getCards(opponent.getHand(), guess).isEmpty()) {
                     //opponent's hand does not have the card we guessed
                     System.out.println("Go fish!");
@@ -188,6 +190,7 @@ public class Player {
                             toRemove.add(opponent.getHand().get(i));
                         }
                     }
+                    //removes guessed card from opponent's hand
                     for (int j = 0; j < toRemove.size(); j++) {
                         for (int i = 0; i < opponent.getHand().size(); i++) {
                             if (opponent.getHand().get(i).getValue().equals(toRemove.get(j).getValue())) {
@@ -195,20 +198,19 @@ public class Player {
                             }
                         }
                     }
-                    checkFourOfAKind(guess, deck,smartComputerMemory);
+                    checkFourOfAKind(guess, deck, smartComputerMemory);
                 }
                 //add a card to opponent's hand if their hand is empty
                 if (opponent.getHand().isEmpty() && !deck.isEmpty()) {
                     opponent.drawCard(deck, smartComputerMemory);
                 }
             }
-
         }
-
         //if the computer is guessing
         if (getType().equals("computer")) {
             boolean goodInput = false;
             char inputHaveCard = 'c';
+            //gets user input to if they have the guessed card
             while (!goodInput) {
                 Scanner reader = new Scanner(System.in);
                 System.out.print("Your Hand: ");
@@ -223,9 +225,11 @@ public class Player {
                     goodInput = true;
                 }
             }
+            //if they don't have the card, have the computer draw
             if (inputHaveCard == 'n') {
                 drawCard(deck, smartComputerMemory);
-            } else if (inputHaveCard == 'y') {
+            } else if (inputHaveCard == 'y') { //check to make sure the user actually does have the card
+                //if so, remove the card from player's hand and give to computer
                 boolean playerReallyHasCard = false;
                 for (int i = 0; i < opponent.getHand().size(); i++) {
                     //find all cards in opponent's hand that match the player's
@@ -236,12 +240,13 @@ public class Player {
                         playerReallyHasCard = true;
                     }
                 }
+                // removes card from user's hand
                 for (int j = 0; j < toRemove.size(); j++) {
                     for (int i = 0; i < opponent.getHand().size(); i++) {
                         if (opponent.getHand().get(i).getValue().equals(toRemove.get(j).getValue())) {
                             opponent.removeFromHand(i);
-                            if(opponent.getHand().isEmpty()){
-                                if(!deck.isEmpty()){
+                            if (opponent.getHand().isEmpty()) {
+                                if (!deck.isEmpty()) {
                                     System.out.println("Your hand was empty, you drew a card.");
                                 }
                                 opponent.drawCard(deck, smartComputerMemory);
@@ -249,7 +254,8 @@ public class Player {
                         }
                     }
                 }
-                checkFourOfAKind(guess, deck,smartComputerMemory);
+                checkFourOfAKind(guess, deck, smartComputerMemory);
+                //prints if player lied about having a card
                 if (!playerReallyHasCard) {
                     System.out.println("ok then, where is it?");
                     System.out.println("...LIAR!\n");
@@ -258,9 +264,9 @@ public class Player {
             }
         }
     }
-	
-	//converts int to face card values
-    private String valueToDisplay(String value){
+
+    //converts int to face card values
+    private String valueToDisplay(String value) {
         String display = value;
         switch (value.toLowerCase()) {
             case "11":
@@ -280,24 +286,23 @@ public class Player {
         }
         return display;
     }
-	
-	//converts hand to a string for log
-    public String handToString(){
+
+    //converts hand to a string for log
+    public String handToString() {
         String output = "";
-        for(Card c:hand){
-            output= output+valueToDisplay(c.getValue())+c.getSuit()+" ";
-        }
-        return output;
-    }
-	
-	//converts four of a kind sets to a string
-    public String FourOfAKindSetsToString(){
-        String output = "";
-        for(String v:getFourOfAKindSets()){
-            output = output + valueToDisplay(v) + "♡ " + valueToDisplay(v) + "♢ " + valueToDisplay(v) + "♣ " + valueToDisplay(v) + "♠ ";
+        for (Card c : hand) {
+            output = output + valueToDisplay(c.getValue()) + c.getSuit() + " ";
         }
         return output;
     }
 
+    //converts four of a kind sets to a string
+    public String FourOfAKindSetsToString() {
+        String output = "";
+        for (String v : getFourOfAKindSets()) {
+            output = output + valueToDisplay(v) + "♡ " + valueToDisplay(v) + "♢ " + valueToDisplay(v) + "♣ " + valueToDisplay(v) + "♠ ";
+        }
+        return output;
+    }
 
 }
