@@ -1,11 +1,16 @@
-
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Random;
 
 public class Main {
-
     public static void main(String args[]) {
+
+        FIO fio = new FIO();
+        String fName = "src/gameLogs.txt";
+
+        fio.fWrite(fName,"\n=== NEW GAME ===\n");
+
+        int round = 0;
 
         //needed for smart computer
         ArrayList<String> smartComputerMemory = new ArrayList<String>();
@@ -39,17 +44,18 @@ public class Main {
         //start the game
         boolean game = true;
 
+
         //set the lying chance
         boolean goodInputL = false;
         String inputLyingChace = "0";
         int lyingChance = 0;
         while (!goodInputL) {
             Scanner reader = new Scanner(System.in);
-            System.out.println("Opponent lying % (integer from 1-100): ");
+            System.out.println("Opponent lying % (integer from 0-100): ");
             inputLyingChace = reader.next();
             if (isInteger(inputLyingChace)) {
                 lyingChance = Integer.parseInt(inputLyingChace);
-                if (lyingChance >= 0 && lyingChance <= 100) {
+                if(lyingChance >= 0 && lyingChance<= 100){
                     goodInputL = true;
                 }
             }
@@ -71,13 +77,16 @@ public class Main {
         }
 
         boolean isComputerMemoryOn = false;
-        if (inputSmart == 'y') {
+        if(inputSmart == 'y'){
             isComputerMemoryOn = true;
-        } else {
+        }else{
             isComputerMemoryOn = false;
         }
 
+
         while (game) {
+
+            round++;
             //show user their hand
             System.out.print("Your Hand: ");
             user.displayCards(user.getHand());
@@ -141,31 +150,67 @@ public class Main {
             smartComputerMemory.add(inputGuess);
 
             //player guess
-            user.guess(computer, inputGuess, deck, lyingChance, smartComputerMemory);
 
-            if (!computer.getHand().isEmpty()) {
+            String output = Integer.toString(round);
+            output="round "+output + ":";
+            fio.fWrite(fName,output);
+
+
+            output = "user's hand: "+user.handToString();
+            fio.fWrite(fName,output);
+            output = "computer's hand: "+computer.handToString();
+            fio.fWrite(fName,output);
+
+            output = "user's guess: "+inputGuess;
+            fio.fWrite(fName,output);
+
+            user.guess(computer, inputGuess, deck, lyingChance,smartComputerMemory);
+
+            output = "user's hand: "+user.handToString();
+            fio.fWrite(fName,output);
+            output = "computer's hand: "+computer.handToString();
+            fio.fWrite(fName,output);
+
+
+            if(!computer.getHand().isEmpty()){
 
                 boolean compterHasCardInMemory = false;
 
-                for (Card c : computer.getHand()) {
-                    for (String v : smartComputerMemory) {
-                        if (c.getValue().equals(v)) {
+
+
+                ArrayList<String> validGuess = new ArrayList<String>();
+                for(Card c:computer.getHand()){
+                    for(String v: smartComputerMemory){
+                        if(c.getValue().equals(v) && !validGuess.contains(v)){
+                            validGuess.add(v);
                             compterHasCardInMemory = true;
                         }
                     }
                 }
 
-                if (compterHasCardInMemory) {
+
+
+                if(compterHasCardInMemory && isComputerMemoryOn){
                     Random rand = new Random();
-                    int compGuess = rand.nextInt(smartComputerMemory.size());
-                    computer.guess(user, smartComputerMemory.get(compGuess), deck, lyingChance, smartComputerMemory);
-                } else {
-                    Random rand = new Random();
-                    int compGuess = rand.nextInt(computer.getHand().size());
-                    computer.guess(user, computer.getHand().get(compGuess).getValue(), deck, lyingChance, smartComputerMemory);
+                    int compGuess = rand.nextInt(validGuess.size());
+                    output = "computer's guess: "+validGuess.get(compGuess);
+                    computer.guess(user, validGuess.get(compGuess), deck,lyingChance,smartComputerMemory);
+                    fio.fWrite(fName,output);
+                }else{
+                    Random rand2 = new Random();
+                    int compGuess2 = rand2.nextInt(computer.getHand().size());
+                    output = "computer's guess: "+computer.getHand().get(compGuess2).getValue();
+                    computer.guess(user, computer.getHand().get(compGuess2).getValue(), deck,lyingChance,smartComputerMemory);
+                    fio.fWrite(fName,output);
                 }
 
             }
+
+            output = "user's hand: "+user.handToString();
+            fio.fWrite(fName,output);
+            output = "computer's hand: "+computer.handToString();
+            fio.fWrite(fName,output);
+
 
             //end game when user hand is empty
             //note that part of the computer.guess() could take a card from the player, but the player will also draw a new card in the same method
@@ -182,37 +227,41 @@ public class Main {
                 System.out.print("\nComputer's sets:");
                 computer.printSets(computer.getFourOfAKindSets());
 
+                output = "user's sets: " + user.FourOfAKindSetsToString();
+                fio.fWrite(fName,output);
+                output = "computers's sets: " + computer.FourOfAKindSetsToString();
+                fio.fWrite(fName,output);
+
                 game = false;
-                //display winner and print out each player's 4OfAKind arrays
             }
         }
     }
 
     public static void shuffle(ArrayList<Card> deck) {
         ArrayList<Card> newArray = new ArrayList<Card>();
-        for (int i = 0; i < deck.size(); i++) {
-            Card newCard = new Card("0", '0');
+        for(int i=0;i<deck.size();i++){
+            Card newCard = new Card("0",'0');
             newArray.add(newCard);
         }
-        for (int i = 0; i < deck.size(); i++) {
+        for(int i=0;i<deck.size();i++){
             Random rand = new Random();
             int randomIndex = rand.nextInt(deck.size());
             //try to place card in random index
             boolean cardPlaced = false;
-            while (!cardPlaced) {
-                if (newArray.get(randomIndex).getValue() == "0") {
-                    newArray.set(randomIndex, deck.get(i));
+            while(!cardPlaced){
+                if(newArray.get(randomIndex).getValue() == "0"){
+                    newArray.set(randomIndex,deck.get(i));
                     cardPlaced = true;
                 }
-                randomIndex++;
-                if (randomIndex >= 52) {
+                randomIndex ++;
+                if(randomIndex>=52){
                     randomIndex = 0;
                 }
             }
         }
 
-        for (int i = 0; i < deck.size(); i++) {
-            deck.set(i, newArray.get(i));
+        for(int i=0;i<deck.size();i++){
+            deck.set(i,newArray.get(i));
         }
 
     }
